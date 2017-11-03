@@ -1,0 +1,65 @@
+# Katzenpost server configuration file.
+
+#
+# The Server section contains mandatory information common to all nodes.
+#
+
+[Server]
+
+  # Identifier is the human readable identifier for the node (eg: FQDN).
+  Identifier = "example.com"
+
+  # Addresses are the IP address/port combinations that the server will bind
+  # to for incoming connections.
+  Addresses = [ "192.0.2.1:29483", "[2001:DB8::1]:29483" ]
+
+  # DataDir is the absolute path to the server's state files.
+  DataDir = "/var/lib/katzenpost"
+
+  # IsProvider specifies if the server is a provider (vs a mix).
+  IsProvider = true
+
+#
+# The Logging section controls the logging.
+#
+
+[Logging]
+
+  # Disable disables logging entirely.
+  Disable = false
+
+  # File specifies the log file, if omitted stdout will be used.
+  # File = "/var/log/katzenpost.log"
+
+  # Level specifies the log level out of `ERROR`, `WARNING`, `NOTICE`,
+  # `INFO` and `DEBUG`.
+  #
+  # Warning: The `DEBUG` log level is unsafe for production use.
+  Level = "DEBUG"
+
+#
+# The Provider secton specifies the Provider configuration.
+#
+
+[Provider]
+
+  # UserDB is the path to the user database.  If left empty it will use
+  # `users.db` under the DataDir.
+  # UserDB = ""
+
+  # SpoolDB is the path to the user message spool.  If left empty, it will
+  # use `spool.db` under the DataDir.
+  # SpoolDB = ""
+
+#
+# The Management section specifies the management interface configuration.
+#
+
+[Management]
+
+  # Enable enables the management interface.
+  Enable = true
+
+  # Path specifies the path to the management interface socket.  If left
+  # empty it will use `management_sock` under the DataDir.
+  # Path = ""
