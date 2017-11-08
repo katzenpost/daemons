@@ -20,6 +20,22 @@
   IsProvider = true
 
 #
+# The PKI section contains the directory authority configuration.
+#
+
+[PKI]
+
+  # Nonvoting is a simple non-voting PKI for test deployments.
+  [PKI.Nonvoting]
+
+    # Address is the IP address/port combination of the directory authority.
+    Address = "192.0.2.2:2323"
+
+    # PublicKey is the directory authority's public key in Base64 or Base16 format.
+    PublicKey = "kAiVchOBwHVtKJVFJLsdCQ9UyN2SlfhLHYqT8ePBetg="
+    # PublicKey = "900895721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
+
+#
 # The Logging section controls the logging.
 #
 
