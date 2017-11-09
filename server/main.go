@@ -66,7 +66,12 @@ func main() {
 	}
 	defer svr.Shutdown()
 
-	// Wait till externally signaled termination, the server will not self
-	// terminate.
-	<-ch
+	// Halt the server gracefully on SIGINT/SIGTERM.
+	go func() {
+		<-ch
+		svr.Shutdown()
+	}()
+
+	// Wait for the server to explode or be terminated.
+	svr.Wait()
 }
