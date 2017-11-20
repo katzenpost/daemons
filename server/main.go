@@ -30,6 +30,7 @@ import (
 
 func main() {
 	cfgFile := flag.String("f", "katzenpost.toml", "Path to the server config file.")
+	genOnly := flag.Bool("g", false, "Generate the keys and exit immediately.")
 	flag.Parse()
 
 	// Set the umask to something "paranoid".
@@ -49,6 +50,9 @@ func main() {
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to load config file '%v': %v\n", *cfgFile, err)
 		os.Exit(-1)
+	}
+	if *genOnly && !cfg.Debug.GenerateOnly {
+		cfg.Debug.GenerateOnly = true
 	}
 
 	// Setup the signal handling.
