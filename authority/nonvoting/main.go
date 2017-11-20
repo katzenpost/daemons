@@ -29,6 +29,7 @@ import (
 
 func main() {
 	cfgFile := flag.String("f", "katzenpost-authority.toml", "Path to the authority config file.")
+	genOnly := flag.Bool("g", false, "Generate the keys and exit immediately.")
 	flag.Parse()
 
 	// Set the umask to something "paranoid".
@@ -39,6 +40,9 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Failed to load config file '%v': %v\n", *cfgFile, err)
 		os.Exit(-1)
 	}
+	if *genOnly && !cfg.Debug.GenerateOnly {
+		cfg.Debug.GenerateOnly = true
+	}
 
 	// Setup the signal handling.
 	ch := make(chan os.Signal)
@@ -47,6 +51,9 @@ func main() {
 	// Start up the authority.
 	svr, err := server.New(cfg)
 	if err != nil {
+		if err == server.ErrGenerateOnly {
+			os.Exit(0)
+		}
 		fmt.Fprintf(os.Stderr, "Failed to spawn authority instance: %v\n", err)
 		os.Exit(-1)
 	}
