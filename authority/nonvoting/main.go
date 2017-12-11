@@ -35,13 +35,10 @@ func main() {
 	// Set the umask to something "paranoid".
 	syscall.Umask(0077)
 
-	cfg, err := config.LoadFile(*cfgFile)
+	cfg, err := config.LoadFile(*cfgFile, *genOnly)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Failed to load config file '%v': %v\n", *cfgFile, err)
 		os.Exit(-1)
-	}
-	if *genOnly && !cfg.Debug.GenerateOnly {
-		cfg.Debug.GenerateOnly = true
 	}
 
 	// Setup the signal handling.
