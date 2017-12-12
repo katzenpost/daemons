@@ -1,0 +1,50 @@
+# Katzenpost minclient configuration file.
+
+#
+# The Account is the Katzenpost user configuration.
+#
+
+[Account]
+
+  # Name is the user name identifier to connect to the provider.
+  Name = "alice"
+
+  # Provider is the user's provider identifier.
+  Provider = "example.com"
+
+  # PrivateKey is the user's ecdh identity key.
+  PrivateKey = "900895721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
+
+#
+# The PKI section contains the directory authority configuration.
+#
+
+[PKI]
+
+  # Nonvoting is a simple non-voting PKI for test deployments.
+  [PKI.Nonvoting]
+
+    # Address is the IP address/port combination of the directory authority.
+    Address = "192.0.2.2:2323"
+
+    # PublicKey is the directory authority's public key in Base64 or Base16 format.
+    PublicKey = "kAiVchOBwHVtKJVFJLsdCQ9UyN2SlfhLHYqT8ePBetg="
+    # PublicKey = "900895721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
+
+#
+# The Logging section controls the logging.
+#
+
+[Logging]
+
+  # Disable disables logging entirely.
+  Disable = false
+
+  # File specifies the log file, if omitted stdout will be used.
+  # File = "/var/log/katzenpost.log"
+
+  # Level specifies the log level out of `ERROR`, `WARNING`, `NOTICE`,
+  # `INFO` and `DEBUG`.
+  #
+  # Warning: The `DEBUG` log level is unsafe for production use.
+  Level = "DEBUG"
