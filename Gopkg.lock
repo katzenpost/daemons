@@ -44,6 +44,15 @@
   version = "v0.3.0"
 
 [[projects]]
+  branch = "master"
+  name = "github.com/agl/ed25519"
+  packages = [
+    "edwards25519",
+    "extra25519"
+  ]
+  revision = "5312a61534124124185d41f09206b9fef1d88403"
+
+[[projects]]
   name = "github.com/coreos/bbolt"
   packages = ["."]
   revision = "48ea1b39c25fc1bab3506fbc712ecbaa842c4d2d"
@@ -86,7 +95,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "fa4dffa62eb60d8be49b28b293ce835262e2772e"
+  revision = "e9a90d8bf7e17a28b686ed6f49efdbbf7475446b"
 
 [[projects]]
   branch = "master"
@@ -111,7 +120,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "871ccec30b954db82f6af13927833b524e0a4ce2"
+  revision = "a8f69d65c1dcc5ca3333f25442568924e979802b"
 
 [[projects]]
   branch = "master"
@@ -127,7 +136,7 @@
     "internal/pop3",
     "internal/recipient"
   ]
-  revision = "c9fab09619344ab9c1a558b8c3105cda01bd8ff6"
+  revision = "5689f434af829009bd613b6f2ef8cb1a0d17730b"
 
 [[projects]]
   branch = "master"
@@ -137,7 +146,7 @@
     "block",
     "internal/path"
   ]
-  revision = "f5001ad404e50a6af889210a8f8e4f77175f71e9"
+  revision = "e562dd67d55e5ddf2411b073c9c97da0b6876f19"
 
 [[projects]]
   branch = "master"
@@ -159,7 +168,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "894995e2d0bddc752efac7f12005f7a291a866bf"
+  revision = "41d3f51ae5852e10c4bd609d5fb27c3ba35062b6"
 
 [[projects]]
   branch = "master"
