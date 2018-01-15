@@ -90,12 +90,11 @@
   name = "github.com/katzenpost/authority"
   packages = [
     "nonvoting/client",
-    "nonvoting/internal/constants",
     "nonvoting/internal/s11n",
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "e9a90d8bf7e17a28b686ed6f49efdbbf7475446b"
+  revision = "29cb73863c5b3b716491916ca7b68a5c96f52980"
 
 [[projects]]
   branch = "master"
@@ -120,7 +119,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "a8f69d65c1dcc5ca3333f25442568924e979802b"
+  revision = "cfafa3cd6c3b2650fd221d20e56c40a775824bbd"
 
 [[projects]]
   branch = "master"
@@ -136,7 +135,7 @@
     "internal/pop3",
     "internal/recipient"
   ]
-  revision = "5689f434af829009bd613b6f2ef8cb1a0d17730b"
+  revision = "b2d4151731cb8e4be6bdfbfcdcb4f35d672f4155"
 
 [[projects]]
   branch = "master"
@@ -201,11 +200,7 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = [
-    "context",
-    "context/ctxhttp",
-    "idna"
-  ]
+  packages = ["idna"]
   revision = "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
 
 [[projects]]
