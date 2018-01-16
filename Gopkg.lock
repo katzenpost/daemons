@@ -135,7 +135,7 @@
     "internal/pop3",
     "internal/recipient"
   ]
-  revision = "b2d4151731cb8e4be6bdfbfcdcb4f35d672f4155"
+  revision = "35b6d7d15fa7680161cd68fab95b3cbf7ade1df8"
 
 [[projects]]
   branch = "master"
