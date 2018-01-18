@@ -94,7 +94,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "29cb73863c5b3b716491916ca7b68a5c96f52980"
+  revision = "217bd0680ba392dadabf9026595403436331cf57"
 
 [[projects]]
   branch = "master"
@@ -119,7 +119,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "cfafa3cd6c3b2650fd221d20e56c40a775824bbd"
+  revision = "56791d8a0938b2abba2e073998125bf81a467e1d"
 
 [[projects]]
   branch = "master"
@@ -133,9 +133,10 @@
     "internal/imf",
     "internal/pkiclient",
     "internal/pop3",
+    "internal/proxy",
     "internal/recipient"
   ]
-  revision = "35b6d7d15fa7680161cd68fab95b3cbf7ade1df8"
+  revision = "fc0313255cd24fb2e9f3a5ac58fae47096db9a2b"
 
 [[projects]]
   branch = "master"
@@ -145,7 +146,7 @@
     "block",
     "internal/path"
   ]
-  revision = "e562dd67d55e5ddf2411b073c9c97da0b6876f19"
+  revision = "55ca2d1e56bffe55bc2f410ae741e61f0da56a46"
 
 [[projects]]
   branch = "master"
@@ -167,7 +168,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "41d3f51ae5852e10c4bd609d5fb27c3ba35062b6"
+  revision = "cc5e183aacae710f66c7532f3ea7c58c29b9e3db"
 
 [[projects]]
   branch = "master"
@@ -200,7 +201,10 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/net"
-  packages = ["idna"]
+  packages = [
+    "idna",
+    "proxy"
+  ]
   revision = "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
 
 [[projects]]
