@@ -136,7 +136,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "fc0313255cd24fb2e9f3a5ac58fae47096db9a2b"
+  revision = "debf76dc1604b759812c5546065cf7f2b5f38776"
 
 [[projects]]
   branch = "master"
@@ -168,7 +168,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "cc5e183aacae710f66c7532f3ea7c58c29b9e3db"
+  revision = "a51e149126cf38cde4c007db884891f690604ca8"
 
 [[projects]]
   branch = "master"

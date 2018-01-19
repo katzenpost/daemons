@@ -59,13 +59,41 @@
 
 [Provider]
 
-  # UserDB is the path to the user database.  If left empty it will use
-  # `users.db` under the DataDir.
-  # UserDB = ""
+  # UserDB is the user database configuration.  If left empty the simple
+  # BoltDB backed user database will be used with the default database.
+  # [Provider.UserDB]
 
-  # SpoolDB is the path to the user message spool.  If left empty, it will
-  # use `spool.db` under the DataDir.
-  # SpoolDB = ""
+    # Backend selects the UserDB backend to be used.
+    # Backend = "bolt"
+
+    # Bolt is the BoltDB backed user database. (`bolt`)
+    # [Provider.UserDB.Bolt]
+
+      # UserDB is the path to the user database.  If left empty it will use
+      # `users.db` under the DataDir.
+      # UserDB = "fuck"
+
+    # Extern is the externally defined (RESTful http) user database. (`extern`)
+    # [Provider.UserDB.Extern]
+
+      # ProviderURL is the base URL used for the external provider
+      # authentication API.  It should be of the form `http://localhost:8080`.
+      # ProviderURL = "http://localhost:8080"
+
+  # SpoolDB is the user message spool configuration.  If left empty, the
+  # simple BoltDB backed user message spool will be used with the default
+  # database.
+  # [Provider.SpoolDB]
+
+    # Backend selects the SpoolDB backend to be used.
+    # Backend = "bolt"
+
+    # Bolt is the BoltDB backed user message spool. (`bolt`)
+    # [Provider.SpoolDB.Bolt]
+
+      # SpoolDB is the path to the user message spool.  If left empty, it will
+      # use `spool.db` under the DataDir.
+      # SpoolDB = "fuck"
 
 #
 # The Management section specifies the management interface configuration.
