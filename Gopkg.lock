@@ -94,7 +94,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "217bd0680ba392dadabf9026595403436331cf57"
+  revision = "1aa32fce2d1f20c58d6667f0e36529bc4e4f6e92"
 
 [[projects]]
   branch = "master"
@@ -168,7 +168,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "a51e149126cf38cde4c007db884891f690604ca8"
+  revision = "ac81a771721d7270425d8b88a7cb2d912a53b921"
 
 [[projects]]
   branch = "master"
