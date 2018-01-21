@@ -187,10 +187,10 @@
   revision = "b93303610bbe1b2cc570daff2de7d77dfac329a0"
 
 [[projects]]
-  branch = "master"
   name = "github.com/ugorji/go"
   packages = ["codec"]
   revision = "9831f2c3ac1068a78f50999a30db84270f647af6"
+  version = "v1.1"
 
 [[projects]]
   branch = "master"
@@ -206,7 +206,7 @@
     "poly1305",
     "sha3"
   ]
-  revision = "13931e22f9e72ea58bb73048bc752b48c6d4d4ac"
+  revision = "a6600008915114d9c087fad9f03d75087b1a74df"
 
 [[projects]]
   branch = "master"
@@ -221,7 +221,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "810d7000345868fc619eb81f46307107118f4ae1"
+  revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
 
 [[projects]]
   branch = "master"
