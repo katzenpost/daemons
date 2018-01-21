@@ -94,7 +94,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "4a94e11401e9359dfb77a989a2e04c6a86dc9c7b"
+  revision = "489f6f890182b1f2bb2b14f2dd337d4c417a504b"
 
 [[projects]]
   branch = "master"
@@ -136,7 +136,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "8b6bdb4ee37e51ec55ae40009896f511ff37ec69"
+  revision = "21b04c3fe1d1feea9faa712e16a30628cb832be9"
 
 [[projects]]
   branch = "master"
@@ -146,7 +146,7 @@
     "block",
     "internal/path"
   ]
-  revision = "7a6d2017448e08a578b864b44df850f8b92db145"
+  revision = "c42b729d286ac8da74fa16930553ef58531c127e"
 
 [[projects]]
   branch = "master"

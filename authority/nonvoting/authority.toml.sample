@@ -47,6 +47,10 @@
   # of the exponential distribution.
   MaxDelay = 90000
 
+  # LambdaP is the mean of the poisson distribution that clients will use
+  # to sample the send scheduling interval (seconds).
+  LambdaP = 15.0
+
 #
 # The Mixes array defines the list of white-listed non-provider nodes.
 #
