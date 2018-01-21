@@ -146,7 +146,7 @@
     "block",
     "internal/path"
   ]
-  revision = "55ca2d1e56bffe55bc2f410ae741e61f0da56a46"
+  revision = "7a6d2017448e08a578b864b44df850f8b92db145"
 
 [[projects]]
   branch = "master"
@@ -160,15 +160,25 @@
   packages = [
     ".",
     "config",
+    "internal/constants",
+    "internal/cryptoworker",
+    "internal/debug",
+    "internal/glue",
+    "internal/incoming",
     "internal/mixkey",
+    "internal/outgoing",
+    "internal/packet",
+    "internal/pki",
     "internal/pkicache",
+    "internal/provider",
+    "internal/scheduler",
     "spool",
     "spool/boltspool",
     "userdb",
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "ac81a771721d7270425d8b88a7cb2d912a53b921"
+  revision = "aa4e08d0b32d6937e1649a2e7ea6a7e486df5312"
 
 [[projects]]
   branch = "master"
