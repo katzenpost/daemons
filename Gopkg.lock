@@ -127,6 +127,7 @@
   packages = [
     ".",
     "config",
+    "event",
     "internal/account",
     "internal/authority",
     "internal/glue",
@@ -136,7 +137,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "c3540845230dbd6d7340eb8f522b8cae72baed37"
+  revision = "259a6acb93bd52db41f53ecc0486e0dfd1852b82"
 
 [[projects]]
   branch = "master"
