@@ -1,0 +1,68 @@
+# Katzenpost client POP3/SMTP proxy configuration file.
+
+#
+# The Proxy section contains mandatory proxy configuration.
+#
+
+[Proxy]
+
+  # POP3Address is the IP address/port combination that the mail proxy will
+  # bind to for POP3 access.  If omitted `127.0.0.1:2524` will be used.
+  POP3Address = "127.0.0.1:2524"
+
+  # SMTPAddress is the IP address/port combination that the mail proxy will
+  # bind to for SMTP access.  If omitted `127.0.0.1:2525` will be used.
+  SMTPAddress = "127.0.0.1:2525"
+
+  # DataDir is the absolute path to the mail proxy's state files.
+  DataDir = "/home/yawning/.local/share/katzenpost"
+
+#
+# The Logging section controls the logging.
+#
+
+[Logging]
+
+  # Disable disables logging entirely.
+  Disable = false
+
+  # File specifies the log file, if omitted stdout will be used.
+  # File = "/home/yawning/.local/share/katzenpost/katzenpost.log"
+
+  # Level specifies the log level out of `ERROR`, `WARNING`, `NOTICE`,
+  # `INFO` and `DEBUG`.
+  #
+  # Warning: The `DEBUG` log level is unsafe for production use.
+  Level = "DEBUG"
+
+#
+# The NonvotingAuthority section specifies nonvoting directory authorities.
+
+[NonvotingAuthority]
+
+  [NonvotingAuthority.TestAuthority]
+
+    # Address is the IP address/port combination of the directory authority.
+    Address = "192.0.2.2:2323"
+
+    # PublicKey is the directory authority's public key in Base64 or Base16
+    # format.
+    PublicKey = "kAiVchOBwHVtKJVFJLsdCQ9UyN2SlfhLHYqT8ePBetg="
+
+#
+# The Account section specifies account configuration(s).
+#
+
+[[Account]]
+  # User is the account user name.
+  User = "yawning"
+
+  # Provider is the provider identifier used by this account.
+  Provider = "example.com"
+
+  # ProviderKeyPin is the optinal pinned provider signing key in Base64 or
+  # Base16 format.
+  ProviderKeyPin = "0AV1syaCdBbm3CLmgXLj6HdlMNiTeeIxoDc8Lgk41e0="
+
+  # Authority is the authority configuration used by this account.
+  Authority = "TestAuthority"
