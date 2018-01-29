@@ -137,7 +137,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "259a6acb93bd52db41f53ecc0486e0dfd1852b82"
+  revision = "bc4486805fc3bc784c3f3f0270631e0049b8a109"
 
 [[projects]]
   branch = "master"
