@@ -66,3 +66,7 @@
 
   # Authority is the authority configuration used by this account.
   Authority = "TestAuthority"
+
+[Management]
+  Enable = true
+  Path = "/home/user/.local/share/katzenpost/management_sock"
