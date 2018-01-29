@@ -67,6 +67,15 @@
   # Authority is the authority configuration used by this account.
   Authority = "TestAuthority"
 
+#
+# The Management section specifies the management interface configuration.
+#
+
 [Management]
+
+  # Enable enables the management interface.
   Enable = true
+
+  # Path specifies the path to the management interface socket.  If left
+  # empty it will use `management_sock` under the DataDir.
   Path = "/home/user/.local/share/katzenpost/management_sock"
