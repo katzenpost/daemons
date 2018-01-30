@@ -137,7 +137,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "02d423f97784b8635030ae60bdf692623b7fc46b"
+  revision = "6f3ddeacd98aafcad639aef429de295d7dc806a8"
 
 [[projects]]
   branch = "master"
@@ -147,7 +147,7 @@
     "block",
     "internal/path"
   ]
-  revision = "c42b729d286ac8da74fa16930553ef58531c127e"
+  revision = "63be5c6ebedc437b012c31934cdf695710337622"
 
 [[projects]]
   branch = "master"
