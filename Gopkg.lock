@@ -86,6 +86,19 @@
   revision = "d0e65e56babe3f687ff94c1d764ca0e6aa7723ee"
 
 [[projects]]
+  name = "github.com/jackc/pgx"
+  packages = [
+    ".",
+    "chunkreader",
+    "internal/sanitize",
+    "pgio",
+    "pgproto3",
+    "pgtype"
+  ]
+  revision = "da3231b0b66e2e74cdb779f1d46c5e958ba8be27"
+  version = "v3.1.0"
+
+[[projects]]
   branch = "master"
   name = "github.com/katzenpost/authority"
   packages = [
@@ -173,13 +186,20 @@
     "internal/pkicache",
     "internal/provider",
     "internal/scheduler",
+    "internal/sqldb",
     "spool",
     "spool/boltspool",
     "userdb",
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "f9e8bd2275ab9be71a1bfb1c1287b1eeb3fcda3f"
+  revision = "9c7cfd4e3ca376eb8d17a63bfee0106e5651300d"
+
+[[projects]]
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
 
 [[projects]]
   branch = "master"
@@ -207,7 +227,7 @@
     "poly1305",
     "sha3"
   ]
-  revision = "a6600008915114d9c087fad9f03d75087b1a74df"
+  revision = "1875d0a70c90e57f11972aefd42276df65e895b9"
 
 [[projects]]
   branch = "master"
@@ -216,13 +236,13 @@
     "idna",
     "proxy"
   ]
-  revision = "5ccada7d0a7ba9aeb5d3aca8d3501b4c2a509fec"
+  revision = "0ed95abb35c445290478a5348a7b38bb154135fd"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "2c42eef0765b9837fbdab12011af7830f55f88f0"
+  revision = "ff2a66f350cefa5c93a634eadb5d25bb60c85a9c"
 
 [[projects]]
   branch = "master"
