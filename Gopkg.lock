@@ -107,7 +107,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "8c19aabf5ae3f5e624d603805322d5bd0fa0fa9b"
+  revision = "58fd1618e4ef3a1c5d4cd4ec31ef32a499e1b911"
 
 [[projects]]
   branch = "master"
@@ -132,7 +132,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "feeb96ec57f1a1a39db22e83bc3af6ae8b1b13c7"
+  revision = "fdab27bf2aba871442bb8cec23cbd9efa293e26e"
 
 [[projects]]
   branch = "master"
@@ -150,7 +150,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "1400d0c3218e507d687f21429c307473a2aa1883"
+  revision = "2c6fa7b90bcf0c60838df117129fdf4616672a3f"
 
 [[projects]]
   branch = "master"
@@ -185,6 +185,7 @@
     "internal/pki",
     "internal/pkicache",
     "internal/provider",
+    "internal/provider/kaetzchen",
     "internal/scheduler",
     "internal/sqldb",
     "spool",
@@ -193,7 +194,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "f3ce0ce41ff8646738714a231915247c48ff0732"
+  revision = "4886d60e5f344f152bab10392a5112456c2d45a6"
 
 [[projects]]
   name = "github.com/pkg/errors"
