@@ -132,7 +132,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "fdab27bf2aba871442bb8cec23cbd9efa293e26e"
+  revision = "f9dfba0336f0c08b1154e7e976bc44d5a9c8b162"
 
 [[projects]]
   branch = "master"
@@ -150,7 +150,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "2c6fa7b90bcf0c60838df117129fdf4616672a3f"
+  revision = "4147c91a8890842e99f136cd12ef392c0a455b68"
 
 [[projects]]
   branch = "master"
@@ -194,7 +194,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "4886d60e5f344f152bab10392a5112456c2d45a6"
+  revision = "fc0c72439c3c501352ef8fc1ca467e3a8945af34"
 
 [[projects]]
   name = "github.com/pkg/errors"
