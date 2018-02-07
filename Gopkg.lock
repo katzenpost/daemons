@@ -132,7 +132,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "f9dfba0336f0c08b1154e7e976bc44d5a9c8b162"
+  revision = "086878aa5f0c607ddecd968b79bdcda0b12b8f77"
 
 [[projects]]
   branch = "master"
@@ -150,7 +150,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "4147c91a8890842e99f136cd12ef392c0a455b68"
+  revision = "944ace9285f937d1cba85ecdb353bd2a84e22492"
 
 [[projects]]
   branch = "master"
@@ -160,13 +160,13 @@
     "block",
     "internal/path"
   ]
-  revision = "63be5c6ebedc437b012c31934cdf695710337622"
+  revision = "37e3fce08a01f4eff117dd1332f01b3284f16537"
 
 [[projects]]
   branch = "master"
   name = "github.com/katzenpost/noise"
   packages = ["."]
-  revision = "330b6cee8864fff2bad72f3d6cd6ba1dcdb2b877"
+  revision = "b7383670c4491d1f9ab5f443d68e5253d715c3ce"
 
 [[projects]]
   branch = "master"
