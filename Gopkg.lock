@@ -166,7 +166,7 @@
   branch = "master"
   name = "github.com/katzenpost/noise"
   packages = ["."]
-  revision = "b7383670c4491d1f9ab5f443d68e5253d715c3ce"
+  revision = "355f807324aecd3ff9c13d42a6b09631ea337f59"
 
 [[projects]]
   branch = "master"
