@@ -107,7 +107,7 @@
     "nonvoting/server",
     "nonvoting/server/config"
   ]
-  revision = "ed302b9299d96383bc7ec8a9bdeaf299ed29083f"
+  revision = "077bdb56e3d78aede7390f5f1e3a0ea42a00b302"
 
 [[projects]]
   branch = "master"
@@ -132,7 +132,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "5123a0485e2e30251afa515a2c0f870845f999bd"
+  revision = "c44d7aa542bf8b213a33fdb95928c4bb8754b77d"
 
 [[projects]]
   branch = "master"
@@ -150,7 +150,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "6540f0595d48b93ac8d094b616af581e37ab8888"
+  revision = "650b2d66b025ebafec0d25baad87694b59782a15"
 
 [[projects]]
   branch = "master"
