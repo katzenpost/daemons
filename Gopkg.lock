@@ -150,7 +150,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "93074be1dd28e9b09c9e66935fbecf0688013d01"
+  revision = "8a35ae1479ac43d97a91ba789e8c493d69477af8"
 
 [[projects]]
   branch = "master"
@@ -194,7 +194,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "2c156e0426d661c03e9f931a1e526bdb6e3da313"
+  revision = "e32896c0be5f10d042cd8613836c991d20e56d1a"
 
 [[projects]]
   name = "github.com/pkg/errors"
