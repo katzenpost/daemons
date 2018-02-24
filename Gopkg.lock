@@ -126,13 +126,14 @@
     "sphinx/commands",
     "sphinx/constants",
     "sphinx/internal/crypto",
+    "sphinx/path",
     "thwack",
     "utils",
     "wire",
     "wire/commands",
     "worker"
   ]
-  revision = "e2ff4487f0c2bed1d18bfd5906b1a5e0ef7a185f"
+  revision = "5e053b1fbee8580144b7021f50a19e25b865fc4c"
 
 [[projects]]
   branch = "master"
@@ -157,10 +158,9 @@
   name = "github.com/katzenpost/minclient"
   packages = [
     ".",
-    "block",
-    "internal/path"
+    "block"
   ]
-  revision = "605c9490d1a122acf734a1665e8b01ca7b192469"
+  revision = "14fdfa6714efb541a82f146046464cd683d9c540"
 
 [[projects]]
   branch = "master"
