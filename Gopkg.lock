@@ -194,7 +194,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "c9486117d59edc1440c90317921bd61e1be6ee91"
+  revision = "40e36a76c137847ac1fb564983fb9b00a3d65c4f"
 
 [[projects]]
   name = "github.com/pkg/errors"
