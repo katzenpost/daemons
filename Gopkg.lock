@@ -9,6 +9,12 @@
 
 [[projects]]
   branch = "master"
+  name = "git.schwanenlied.me/yawning/avl.git"
+  packages = ["."]
+  revision = "04c7c776e3914c0822035b41af4e9b1b710b0c8c"
+
+[[projects]]
+  branch = "master"
   name = "git.schwanenlied.me/yawning/bloom.git"
   packages = ["."]
   revision = "5249ee52905a9ee3a7faa71c7c9395b61815ddd1"
@@ -177,6 +183,7 @@
     "internal/constants",
     "internal/cryptoworker",
     "internal/debug",
+    "internal/decoy",
     "internal/glue",
     "internal/incoming",
     "internal/mixkey",
@@ -194,7 +201,7 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "40e36a76c137847ac1fb564983fb9b00a3d65c4f"
+  revision = "a13df324be47f72f4b0ce41a993ccbfa6a7f1ea5"
 
 [[projects]]
   name = "github.com/pkg/errors"
