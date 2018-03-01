@@ -139,7 +139,7 @@
     "wire/commands",
     "worker"
   ]
-  revision = "5e053b1fbee8580144b7021f50a19e25b865fc4c"
+  revision = "a9ec2884692c8d6dae8bad39ceccf9650dced8d5"
 
 [[projects]]
   branch = "master"
@@ -157,7 +157,7 @@
     "internal/proxy",
     "internal/recipient"
   ]
-  revision = "c45003380032157e026c8286cc3fdb242182117e"
+  revision = "b4bfe585c0707096e663c4c7774bbeaed9b883e0"
 
 [[projects]]
   branch = "master"
@@ -166,7 +166,7 @@
     ".",
     "block"
   ]
-  revision = "14fdfa6714efb541a82f146046464cd683d9c540"
+  revision = "b1f54e28d320fb6e4ef0746839fe87ebdc944ff7"
 
 [[projects]]
   branch = "master"
