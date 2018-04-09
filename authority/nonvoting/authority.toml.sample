@@ -39,17 +39,25 @@
 
   # Lambda is the inverse of the mean of the exponential distribution that
   # clients will use to sample delays.
-  Lambda = 0.00025
+  MixLambda = 0.00025
 
   # MaxDelay is the maximum per-hop delay in milliseconds.
   #
   # If omitted, the MaxDelay will be derived from the 0.99999 quantile of
   # of the exponential distribution.
-  MaxDelay = 90000
+  MixMaxDelay = 90000
 
   # LambdaP is the mean of the poisson distribution that clients will use
   # to sample the send scheduling interval (seconds).
-  LambdaP = 15.0
+  SendLambda = 15.0
+
+  # SendShift is the shift applied to the client send timing samples in
+  # milliseconds.
+  SendShift = 3
+
+  # SendMaxInterval is the maximum send interval in milliseconds, enforced
+  # prior to (excluding) SendShift.
+  SendMaxInterval = 3000
 
 #
 # The Mixes array defines the list of white-listed non-provider nodes.
