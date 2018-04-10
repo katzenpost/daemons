@@ -59,6 +59,17 @@
 
 [Provider]
 
+  # Here's an example Kaetzchen service config.
+  [[Provider.Kaetzchen]]
+    Capability = "fancy"
+    Endpoint = "fancy"
+    Disable = false
+    [Provider.Kaetzchen.Config]
+       rpcUser = "username"
+       rpcPass = "password"
+       rpcUrl = "http://127.0.0.1:11323/"
+
+
   # UserDB is the user database configuration.  If left empty the simple
   # BoltDB backed user database will be used with the default database.
   # [Provider.UserDB]
