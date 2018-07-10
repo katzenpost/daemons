@@ -116,7 +116,6 @@
   revision = "3bf4bfff67a398f6e085f173d83ff8e1c40848ad"
 
 [[projects]]
-  branch = "master"
   name = "github.com/katzenpost/core"
   packages = [
     "constants",
@@ -139,7 +138,8 @@
     "wire/commands",
     "worker"
   ]
-  revision = "a9ec2884692c8d6dae8bad39ceccf9650dced8d5"
+  revision = "50a328944dc7dc026b7066237b391de87ad916a8"
+  version = "v0.0.1"
 
 [[projects]]
   branch = "master"
@@ -175,7 +175,6 @@
   revision = "355f807324aecd3ff9c13d42a6b09631ea337f59"
 
 [[projects]]
-  branch = "master"
   name = "github.com/katzenpost/server"
   packages = [
     ".",
@@ -201,7 +200,8 @@
     "userdb/boltuserdb",
     "userdb/externuserdb"
   ]
-  revision = "a13df324be47f72f4b0ce41a993ccbfa6a7f1ea5"
+  revision = "c9c232b2dbf112e9b301d71992be50aa3d4d88b4"
+  version = "v0.0.1"
 
 [[projects]]
   name = "github.com/pkg/errors"
@@ -310,6 +310,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5ac21df0f28b671129810d1f811b05fb8bb08a3ec403f7bd53340f2ea4e10fb4"
+  inputs-digest = "b569ef4378a12f93521b3cba277198a42e7200097d34aadf11c6016d8308b573"
   solver-name = "gps-cdcl"
   solver-version = 1
