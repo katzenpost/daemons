@@ -56,8 +56,11 @@ func main() {
 	}
 
 	// Setup the signal handling.
-	ch := make(chan os.Signal)
-	signal.Notify(ch, os.Interrupt, syscall.SIGTERM)
+	haltCh := make(chan os.Signal)
+	signal.Notify(haltCh, os.Interrupt, syscall.SIGTERM)
+
+	rotateCh := make(chan os.Signal)
+	signal.Notify(rotateCh, syscall.SIGHUP)
 
 	// Start up the server.
 	svr, err := server.New(cfg)
@@ -72,8 +75,14 @@ func main() {
 
 	// Halt the server gracefully on SIGINT/SIGTERM.
 	go func() {
-		<-ch
+		<-haltCh
 		svr.Shutdown()
+	}()
+
+	// Rotate server logs upon SIGHUP.
+	go func() {
+		<-rotateCh
+		svr.RotateLog()
 	}()
 
 	// Wait for the server to explode or be terminated.
