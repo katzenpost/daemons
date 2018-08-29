@@ -27,8 +27,8 @@ type Impl struct {
 }
 
 var (
-	implCt32 = &Impl{"ct32", ct32.NewCipher}
-	implCt64 = &Impl{"ct64", ct64.NewCipher}
+	implCt32    = &Impl{"ct32", ct32.NewCipher}
+	implCt64    = &Impl{"ct64", ct64.NewCipher}
 	implRuntime = &Impl{"runtime", func(k []byte) cipher.Block {
 		blk, err := NewCipher(k)
 		if err != nil {
@@ -218,7 +218,7 @@ func TestCTR_keystream(t *testing.T) {
 		case "ct64":
 			strideSz = 4 * 16
 		case "runtime":
-			// The CTR tests are tailored towards the bsaes CTR 
+			// The CTR tests are tailored towards the bsaes CTR
 			// so there is not much sense in testing `crypto/aes`'s,
 			// when it's using AES-NI and assembly.
 			t.Logf("Skipping CTR tests: %v\n", impl.name)

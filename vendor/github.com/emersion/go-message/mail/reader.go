@@ -3,7 +3,6 @@ package mail
 import (
 	"container/list"
 	"io"
-	"mime"
 	"strings"
 
 	"github.com/emersion/go-message"
@@ -74,6 +73,9 @@ func CreateReader(r io.Reader) (*Reader, error) {
 // NextPart returns the next mail part. If there is no more part, io.EOF is
 // returned as error.
 //
+// The returned Part.Body must be read completely before the next call to
+// NextPart, otherwise it will be discarded.
+//
 // If the part uses an unknown transfer encoding or charset, NextPart returns an
 // error that verifies message.IsUnknownEncoding, but also returns a Part that
 // can be used.
@@ -97,8 +99,9 @@ func (r *Reader) NextPart() (*Part, error) {
 		} else {
 			// This is a non-multipart part, return a mail part
 			mp := &Part{Body: p.Body}
-			disp, _, _ := mime.ParseMediaType(p.Header.Get("Content-Disposition"))
-			if strings.HasPrefix(p.Header.Get("Content-Type"), "text/") && disp != "attachment" {
+			t, _, _ := p.Header.ContentType()
+			disp, _, _ := p.Header.ContentDisposition()
+			if strings.HasPrefix(t, "text/") && disp != "attachment" {
 				mp.Header = TextHeader{p.Header}
 			} else {
 				mp.Header = AttachmentHeader{p.Header}

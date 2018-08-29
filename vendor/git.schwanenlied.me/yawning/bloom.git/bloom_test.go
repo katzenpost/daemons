@@ -23,6 +23,9 @@ func TestFilter(t *testing.T) {
 		entryLength       = 32
 		falsePositiveRate = 0.01
 		filterSize        = 15 // 2^15 bits = 4 KiB
+
+		expectedEntries = 3418
+		expectedHashes  = 7
 	)
 
 	assert := assert.New(t)
@@ -34,10 +37,10 @@ func TestFilter(t *testing.T) {
 	assert.Equal(0, f.Entries(), "Entries(), empty filter")
 	assert.Equal(4096, len(f.b), "Backing store size")
 
-	// I could assert on these since the values calculated by New() are
-	// supposed to be optimal, but I won't for now.
-	t.Logf("Hashes: %v", f.nrHashes)         // 7 hashes is "ideal".
-	t.Logf("MaxEntries: %v", f.MaxEntries()) // 3418 entries with these params.
+	// Assert that the bloom filter math is correct.
+	assert.Equal(expectedEntries, f.MaxEntries(), "Max entries")
+	assert.Equal(expectedHashes, f.nrHashes, "Hashes")
+	assert.Equal(filterSize, DeriveSize(f.MaxEntries(), falsePositiveRate), "DeriveSize()")
 
 	// Generate enough entries to fully saturate the filter.
 	max := f.MaxEntries()

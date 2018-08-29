@@ -52,7 +52,7 @@ func NewCipher(key []byte) (cipher.Block, error) {
 	default:
 		return nil, errors.New("aes: Invalid key size")
 	}
-	if isCryptoAESSafe() {
+	if useCryptoAES {
 		return aes.NewCipher(key)
 	}
 
@@ -61,6 +61,13 @@ func NewCipher(key []byte) (cipher.Block, error) {
 	runtime.SetFinalizer(r, (resetAble).Reset)
 
 	return blk, nil
+}
+
+// UsingRuntime returns true iff this package is falling through to the
+// runtime's implementation due to hardware support for constant time
+// operation on the current system.
+func UsingRuntime() bool {
+	return useCryptoAES
 }
 
 func init() {

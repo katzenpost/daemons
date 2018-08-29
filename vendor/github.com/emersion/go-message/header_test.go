@@ -69,6 +69,16 @@ var formatHeaderFieldTests = []struct {
 		v:         "v=1; h=From; d=example.org; b=AuUoFEfDxTDkHlLXSZEpZj79LICEps6eda7W3deTVFOk4yAUoqOB4nujc7YopdG5dWLSdNg6xNAZpOPr+kHxt1IrE+NahM6L/LbvaHutKVdkLLkpVaVVQPzeRDI009SO2Il5Lu7rDNH6mZckBdrIx0orEtZV4bmp/YzhwvcubU4=\r\n",
 		formatted: "DKIM-Signature: v=1; h=From; d=example.org;\r\n b=AuUoFEfDxTDkHlLXSZEpZj79LICEps6eda7W3deTVFOk4yAUoqOB4nujc7YopdG5dWLSdNg6x\r\n NAZpOPr+kHxt1IrE+NahM6L/LbvaHutKVdkLLkpVaVVQPzeRDI009SO2Il5Lu7rDNH6mZckBdrI\r\n x0orEtZV4bmp/YzhwvcubU4=\r\n",
 	},
+	{
+		k:         "Bcc",
+		v:         "",
+		formatted: "Bcc: \r\n",
+	},
+	{
+		k:         "Bcc",
+		v:         " ",
+		formatted: "Bcc:  \r\n",
+	},
 }
 
 func TestFormatHeaderField(t *testing.T) {
@@ -77,5 +87,16 @@ func TestFormatHeaderField(t *testing.T) {
 		if s != test.formatted {
 			t.Errorf("Expected formatted header to be %q but got %q", test.formatted, s)
 		}
+	}
+}
+
+func TestEmptyContentType(t *testing.T) {
+	h := make(Header)
+
+	mediaType := "text/plain"
+	if gotMediaType, _, err := h.ContentType(); err != nil {
+		t.Error("Expected no error when parsing empty content type, but got:", err)
+	} else if gotMediaType != mediaType {
+		t.Errorf("Expected media type %q but got %q", mediaType, gotMediaType)
 	}
 }
