@@ -1,6 +1,8 @@
 # goreleaser.yml
 # Release automation
 project_name: katzenpost
+sign:
+   artifacts: checksum
 builds:
   # multiple builds defined as a yaml list
   -
