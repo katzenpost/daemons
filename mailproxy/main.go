@@ -44,6 +44,8 @@ func main() {
 	// Setup the signal handling.
 	ch := make(chan os.Signal)
 	signal.Notify(ch, os.Interrupt, syscall.SIGTERM)
+	hup := make(chan os.Signal)
+	signal.Notify(hup, syscall.SIGHUP)
 
 	// Start up the proxy.
 	proxy, err := mailproxy.New(cfg)
@@ -60,6 +62,14 @@ func main() {
 	go func() {
 		<-ch
 		proxy.Shutdown()
+	}()
+
+	// Rescan RecipientDir on SIGHUP.
+	go func() {
+		for {
+			<-hup
+			proxy.ScanRecipientDir()
+		}
 	}()
 
 	// Wait for the proxy to explode or be terminated.
