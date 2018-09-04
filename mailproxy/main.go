@@ -25,6 +25,7 @@ import (
 
 	"github.com/katzenpost/mailproxy"
 	"github.com/katzenpost/mailproxy/config"
+	"github.com/katzenpost/mailproxy/event"
 )
 
 func main() {
@@ -47,6 +48,7 @@ func main() {
 	hup := make(chan os.Signal)
 	signal.Notify(hup, syscall.SIGHUP)
 
+	cfg.Proxy.EventSink = make(chan event.Event)
 	// Start up the proxy.
 	proxy, err := mailproxy.New(cfg)
 	if err != nil {
