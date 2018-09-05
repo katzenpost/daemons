@@ -66,6 +66,8 @@ func main() {
 				proxy.ScanRecipientDir()
 			default:
 				proxy.Shutdown()
+				close(cfg.Proxy.EventSink)
+				return
 			}
 		}
 	}()
