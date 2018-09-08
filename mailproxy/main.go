@@ -25,6 +25,7 @@ import (
 
 	"github.com/katzenpost/mailproxy"
 	"github.com/katzenpost/mailproxy/config"
+	"github.com/katzenpost/mailproxy/event"
 )
 
 func main() {
@@ -43,10 +44,9 @@ func main() {
 
 	// Setup the signal handling.
 	ch := make(chan os.Signal)
-	signal.Notify(ch, os.Interrupt, syscall.SIGTERM)
-	hup := make(chan os.Signal)
-	signal.Notify(hup, syscall.SIGHUP)
+	signal.Notify(ch, os.Interrupt, syscall.SIGTERM, syscall.SIGHUP)
 
+	cfg.Proxy.EventSink = make(chan event.Event)
 	// Start up the proxy.
 	proxy, err := mailproxy.New(cfg)
 	if err != nil {
@@ -58,17 +58,17 @@ func main() {
 	}
 	defer proxy.Shutdown()
 
-	// Halt the proxy gracefully on SIGINT/SIGTERM.
-	go func() {
-		<-ch
-		proxy.Shutdown()
-	}()
-
-	// Rescan RecipientDir on SIGHUP.
+	// Halt the proxy gracefully on SIGINT/SIGTERM, and scan RecipientDir on SIGHUP.
 	go func() {
 		for {
-			<-hup
-			proxy.ScanRecipientDir()
+			switch <-ch {
+			case syscall.SIGHUP:
+				proxy.ScanRecipientDir()
+			default:
+				proxy.Shutdown()
+				close(cfg.Proxy.EventSink)
+				return
+			}
 		}
 	}()
 
