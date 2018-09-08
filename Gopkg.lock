@@ -146,7 +146,7 @@
   version = "v0.0.1"
 
 [[projects]]
-  digest = "1:8bcda73eded9e527048ab707570152bd5f8397ddfd126ce59b47293e0e9d6e78"
+  digest = "1:eb492ab1adc858fad8df75c3c3f8ecebba64768b51cc14c968be62fb9bc2d5bc"
   name = "github.com/katzenpost/core"
   packages = [
     "constants",
@@ -170,11 +170,11 @@
     "worker",
   ]
   pruneopts = ""
-  revision = "2513773720d6466aba01931d0dfde9268d9a6779"
-  version = "v0.0.2"
+  revision = "2d39b44290df948b0ef7c35e97c3e72ebe663d24"
+  version = "v0.0.3"
 
 [[projects]]
-  digest = "1:ed09e47e3cf59762b012fd92f08eb184891f126f955c99e2aa4e6a693435b8d3"
+  digest = "1:f4defa0901d5b813a93bcae13e82e6f5c44373dccd37431e07c897f3d282443c"
   name = "github.com/katzenpost/mailproxy"
   packages = [
     ".",
@@ -190,8 +190,8 @@
     "internal/recipient",
   ]
   pruneopts = ""
-  revision = "b4bfe585c0707096e663c4c7774bbeaed9b883e0"
-  version = "v0.0.1"
+  revision = "b45fd1feae724c10d267956beb8efedcb045a7b4"
+  version = "v0.0.2"
 
 [[projects]]
   digest = "1:897be91ac50fc444e6d0bd51d06b8485de18f442ef4b121b8c58cd4cdd62950a"
@@ -383,6 +383,7 @@
     "github.com/katzenpost/authority/nonvoting/server/config",
     "github.com/katzenpost/mailproxy",
     "github.com/katzenpost/mailproxy/config",
+    "github.com/katzenpost/mailproxy/event",
     "github.com/katzenpost/server",
     "github.com/katzenpost/server/config",
   ]
