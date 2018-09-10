@@ -23,7 +23,7 @@ required = ["github.com/coreos/bbolt"]
   name = "github.com/katzenpost/mailproxy"
 
 [[constraint]]
-  branch = "kaetzchen_plugin_system.0.add_parameters.1"
+  branch = "kaetzchen_plugin_system.0.add_parameters.2"
   name = "github.com/katzenpost/server"
 
 [[constraint]]
