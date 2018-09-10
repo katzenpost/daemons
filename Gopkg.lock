@@ -185,7 +185,7 @@
 
 [[projects]]
   branch = "reply_bookkeeping.1"
-  digest = "1:94d304a66d959253a93bdee42d2ee24a4d9e547ead707fc6dba2bbc7a9b6a5ff"
+  digest = "1:e88f8284990ecfcb75d59522e8b9b260e9eac8b64701548dfd62e5e260eb0afe"
   name = "github.com/katzenpost/client"
   packages = [
     ".",
@@ -198,7 +198,7 @@
     "utils",
   ]
   pruneopts = ""
-  revision = "0fe3c943dbd192e76380f7b27b0ff8c5bdafccf2"
+  revision = "b9b9492cf5f86b5b09229e89683af2c667abfe94"
 
 [[projects]]
   branch = "master"
@@ -261,11 +261,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:752ee1da7d678fd7212189b930069ad1a1646939cebfa09437c97b494b10f20e"
+  digest = "1:b047636096ab137a8a4682572a3b7b40b135c2e54fe5c863620b6b314858ffd7"
   name = "github.com/katzenpost/noise"
   packages = ["."]
   pruneopts = ""
-  revision = "355f807324aecd3ff9c13d42a6b09631ea337f59"
+  revision = "08e83772a9119dc0b35028bc6d8412dc22b0a9ee"
 
 [[projects]]
   branch = "kaetzchen_plugin_system.0.add_parameters.1"
@@ -343,7 +343,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:793a79198b755828dec284c6f1325e24e09186f1b7ba818b65c7c35104ed86eb"
+  digest = "1:61a86f0be8b466d6e3fbdabb155aaa4006137cb5e3fd3b949329d103fa0ceb0f"
   name = "golang.org/x/crypto"
   packages = [
     "blake2b",
@@ -359,11 +359,11 @@
     "sha3",
   ]
   pruneopts = ""
-  revision = "614d502a4dac94afa3a6ce146bd1736da82514c6"
+  revision = "0e37d006457bf46f9e6692014ba72ef82c33022c"
 
 [[projects]]
   branch = "master"
-  digest = "1:7dd0f1b8c8bd70dbae4d3ed3fbfaec224e2b27bcc0fc65882d6f1dba5b1f6e22"
+  digest = "1:782723d6fc27d202f1943219d68d58b3f6bcab6212c85294b1ddd8b586b1d356"
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -377,18 +377,18 @@
     "trace",
   ]
   pruneopts = ""
-  revision = "8a410e7b638dca158bf9e766925842f6651ff828"
+  revision = "161cd47e91fd58ac17490ef4d742dc98bb4cf60e"
 
 [[projects]]
   branch = "master"
-  digest = "1:79b4fb7cfed68c4d0727858bd32dbe3be4b97ea58e2d767f92287f67810cbc98"
+  digest = "1:ed900376500543ca05f2a2383e1f541b4606f19cd22f34acb81b17a0b90c7f3e"
   name = "golang.org/x/sys"
   packages = [
     "cpu",
     "unix",
   ]
   pruneopts = ""
-  revision = "d99a578cf41bfccdeaf48b0845c823a4b8b0ad5e"
+  revision = "d0be0721c37eeb5299f245a996a483160fc36940"
 
 [[projects]]
   digest = "1:5acd3512b047305d49e8763eef7ba423901e85d5dd2fd1e71778a0ea8de10bd4"
