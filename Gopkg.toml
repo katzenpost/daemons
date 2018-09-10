@@ -2,27 +2,28 @@
 # lacking `Bucket.SetSequence()`.
 required = ["github.com/coreos/bbolt"]
 
-# This is not ready yet.
-ignored = ["github.com/katzenpost/daemons/client"]
-
 [[override]]
-  version = "v0.0.3"
+  branch = "master"
   name = "github.com/katzenpost/core"
 
 [[override]]
-  version = "v0.0.1"
+  branch = "master"
   name = "github.com/katzenpost/minclient"
 
+[[override]]
+  branch = "reply_bookkeeping.1"
+  name = "github.com/katzenpost/client"
+
 [[constraint]]
-  version = "v0.0.1"
+  branch = "master"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
-  version = "v0.0.2"
+  branch = "master"
   name = "github.com/katzenpost/mailproxy"
 
 [[constraint]]
-  version = "v0.0.2"
+  branch = "kaetzchen_plugin_system.0"
   name = "github.com/katzenpost/server"
 
 [[constraint]]
