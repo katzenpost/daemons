@@ -268,8 +268,8 @@
   revision = "355f807324aecd3ff9c13d42a6b09631ea337f59"
 
 [[projects]]
-  branch = "kaetzchen_plugin_system.0"
-  digest = "1:8e3d286e1baf649810dfde42275ed3d364da1b82f3c48fe14d4d89b2fed69471"
+  branch = "kaetzchen_plugin_system.0.add_parameters.1"
+  digest = "1:d89278b437dcfff1e2bc256dea61aaee47f013ffae691bd3a1dcad20bb697449"
   name = "github.com/katzenpost/server"
   packages = [
     ".",
@@ -299,7 +299,7 @@
     "userdb/externuserdb",
   ]
   pruneopts = ""
-  revision = "d070f19df7ec7dc725d20d8ae927e0f44df52c45"
+  revision = "055b8735e1f35466b2ed8efefc1d67e5ac9d1ebe"
 
 [[projects]]
   digest = "1:9adf43f9a17af07a6d587e3b493e2111ad8e07283d5cd58e44e70d23bf6dc644"
