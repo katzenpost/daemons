@@ -59,6 +59,10 @@
 
 [Provider]
 
+  # optional registration HTTP service is turned off by default
+  EnableUserRegistrationHTTP = true
+  UserRegistrationHTTPAddresses = [ "127.0.0.1:8080"]
+
   # Here's the example internal Kaetzchen service configs
   [[Provider.Kaetzchen]]
     Capability = "loop"
