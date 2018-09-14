@@ -45,6 +45,9 @@ func main() {
 	ch := make(chan os.Signal)
 	signal.Notify(ch, os.Interrupt, syscall.SIGTERM)
 
+	rotateCh := make(chan os.Signal)
+	signal.Notify(rotateCh, syscall.SIGHUP)
+
 	// Start up the authority.
 	svr, err := server.New(cfg)
 	if err != nil {
@@ -60,6 +63,12 @@ func main() {
 	go func() {
 		<-ch
 		svr.Shutdown()
+	}()
+
+	// Rotate server logs upon SIGHUP.
+	go func() {
+		<-rotateCh
+		svr.RotateLog()
 	}()
 
 	// Wait for the authority to explode or be terminated.
