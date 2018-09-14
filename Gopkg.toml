@@ -14,7 +14,7 @@ ignored = ["github.com/katzenpost/daemons/client"]
   name = "github.com/katzenpost/minclient"
 
 [[constraint]]
-  version = "v0.0.1"
+  version = "v0.0.3"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
@@ -22,7 +22,7 @@ ignored = ["github.com/katzenpost/daemons/client"]
   name = "github.com/katzenpost/mailproxy"
 
 [[constraint]]
-  version = "v0.0.2"
+  version = "v0.0.3"
   name = "github.com/katzenpost/server"
 
 [[constraint]]
