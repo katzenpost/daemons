@@ -232,15 +232,15 @@
   version = "v0.0.2"
 
 [[projects]]
-  digest = "1:897be91ac50fc444e6d0bd51d06b8485de18f442ef4b121b8c58cd4cdd62950a"
+  digest = "1:270daf9c46df5767085a1bfc6b25220931a9b511b7ef2c87fc4a5ed1132b5d80"
   name = "github.com/katzenpost/minclient"
   packages = [
     ".",
     "block",
   ]
   pruneopts = ""
-  revision = "b1f54e28d320fb6e4ef0746839fe87ebdc944ff7"
-  version = "v0.0.1"
+  revision = "53eda57a23d7fc1939d8ee7798cb9c04ab2fe0bf"
+  version = "v0.0.2"
 
 [[projects]]
   branch = "master"
