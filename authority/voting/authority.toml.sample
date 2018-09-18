@@ -14,11 +14,11 @@
   DataDir = "/var/lib/katzenpost-authority"
 
 [[Authorities]]
-   IdentityKey = "BEEF95721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
+   IdentityPublicKey = "BEEF95721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
    Addresses = [ "192.0.2.7:29483", "[2001:DB8::7]:29483" ]
 
 [[Authorities]]
-   IdentityKey = "CAFE95721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
+   IdentityPublicKey = "CAFE95721381C0756D28954524BB1D090F54C8DD9295F84B1D8A93F1E3C17AD8"
    Addresses = [ "192.0.2.6:29483", "[2001:DB8::6]:29483" ]
 
 #
@@ -45,19 +45,19 @@
 
 [Parameters]
 
-  # Lambda is the inverse of the mean of the exponential distribution that
+  # MixLambda is the inverse of the mean of the exponential distribution that
   # clients will use to sample delays.
-  Lambda = 0.00025
+  MixLambda = 0.00025
 
-  # MaxDelay is the maximum per-hop delay in milliseconds.
+  # MixMaxDelay is the maximum per-hop delay in milliseconds.
   #
   # If omitted, the MaxDelay will be derived from the 0.99999 quantile of
   # of the exponential distribution.
-  MaxDelay = 90000
+  MixMaxDelay = 90000
 
-  # LambdaP is the mean of the poisson distribution that clients will use
+  # SendLambda is the mean of the poisson distribution that clients will use
   # to sample the send scheduling interval (seconds).
-  LambdaP = 15.0
+  SendLambda = 15.0
 
 #
 # The Mixes array defines the list of white-listed non-provider nodes.
