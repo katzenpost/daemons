@@ -6,7 +6,7 @@ required = ["github.com/coreos/bbolt"]
 ignored = ["github.com/katzenpost/daemons/client"]
 
 [[override]]
-  version = "v0.0.3"
+  version = "v0.0.4"
   name = "github.com/katzenpost/core"
 
 [[override]]
@@ -14,15 +14,15 @@ ignored = ["github.com/katzenpost/daemons/client"]
   name = "github.com/katzenpost/minclient"
 
 [[constraint]]
-  version = "v0.0.3"
+  version = "v0.0.4"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
-  version = "v0.0.2"
+  version = "v0.0.3"
   name = "github.com/katzenpost/mailproxy"
 
 [[constraint]]
-  version = "v0.0.3"
+  version = "v0.0.4"
   name = "github.com/katzenpost/server"
 
 [[constraint]]
