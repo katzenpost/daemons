@@ -149,11 +149,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:5d602ea457b899304a3555d966f8aa70ae6c67cb806b4f1de8af1be9c58587a1"
+  digest = "1:0db944d08f7a506ee635f0ca7d133d1f5fbc773750dc3325030688f8f6c0e681"
   name = "github.com/hashicorp/yamux"
   packages = ["."]
   pruneopts = ""
-  revision = "cc6d2ea263b2471faabce371255777a365bf8306"
+  revision = "7221087c3d281fda5f794e28c2ea4c6e4d5c4558"
 
 [[projects]]
   digest = "1:5544f7badae00bc5b9ec6829857bc08f88fce4d3ef73fb616ee57d49abbf7f48"
@@ -171,7 +171,7 @@
   version = "v3.2.0"
 
 [[projects]]
-  digest = "1:50f24b7dac98c589ff7beda6c8319f44b6d334f2c3027236cd50e52e955506c5"
+  digest = "1:f63d32268bdf1468adfa7be867f0ea0b0305faec95af216c07359d2a84267ca8"
   name = "github.com/katzenpost/authority"
   packages = [
     "nonvoting/client",
@@ -180,14 +180,15 @@
     "nonvoting/server/config",
   ]
   pruneopts = ""
-  revision = "cc38d542a8963c13cd960ab1e8e5fff39804bb36"
-  version = "v0.0.3"
+  revision = "b934a1263b5799e8433dee6c5fb5530d13dbb854"
+  version = "v0.0.4"
 
 [[projects]]
-  digest = "1:eb492ab1adc858fad8df75c3c3f8ecebba64768b51cc14c968be62fb9bc2d5bc"
+  digest = "1:be31c7f843af7bc4aff05c0310d7aa6ec30f6c8715d9b58708f8b9adf69f4ea8"
   name = "github.com/katzenpost/core"
   packages = [
     "constants",
+    "crypto/cert",
     "crypto/ecdh",
     "crypto/eddsa",
     "crypto/rand",
@@ -208,11 +209,11 @@
     "worker",
   ]
   pruneopts = ""
-  revision = "2d39b44290df948b0ef7c35e97c3e72ebe663d24"
-  version = "v0.0.3"
+  revision = "b5dbc0a6bff704a64d2deebfe1a928e6f7ea20d2"
+  version = "v0.0.4"
 
 [[projects]]
-  digest = "1:f4defa0901d5b813a93bcae13e82e6f5c44373dccd37431e07c897f3d282443c"
+  digest = "1:25e5b2d9a284a5c544c8cef5f59fb68dafc82bac44130983e493006c2bc5ec99"
   name = "github.com/katzenpost/mailproxy"
   packages = [
     ".",
@@ -228,8 +229,8 @@
     "internal/recipient",
   ]
   pruneopts = ""
-  revision = "b45fd1feae724c10d267956beb8efedcb045a7b4"
-  version = "v0.0.2"
+  revision = "55d0f4b10f7c6c0617030e8db7e1398876986c45"
+  version = "v0.0.3"
 
 [[projects]]
   digest = "1:270daf9c46df5767085a1bfc6b25220931a9b511b7ef2c87fc4a5ed1132b5d80"
@@ -251,7 +252,7 @@
   revision = "08e83772a9119dc0b35028bc6d8412dc22b0a9ee"
 
 [[projects]]
-  digest = "1:fd91ab4cee5f0c1e2de976c0aeb999744680eb31aa41c8bfeb3fdc920a739b6d"
+  digest = "1:815b9d1ebfaa63a97e9be0c0b85a17ab581eca8c59893c84a53479e3c731e1fb"
   name = "github.com/katzenpost/server"
   packages = [
     ".",
@@ -281,8 +282,8 @@
     "userdb/externuserdb",
   ]
   pruneopts = ""
-  revision = "2f39df47b792d1d8ec26a0e9c81cd18221fc145f"
-  version = "v0.0.3"
+  revision = "3586a61e1d12304f641c393f80b4d6c9b7613282"
+  version = "v0.0.4"
 
 [[projects]]
   digest = "1:9adf43f9a17af07a6d587e3b493e2111ad8e07283d5cd58e44e70d23bf6dc644"
@@ -337,7 +338,6 @@
     "ed25519/internal/edwards25519",
     "internal/chacha20",
     "internal/subtle",
-    "pbkdf2",
     "poly1305",
     "sha3",
   ]
@@ -364,14 +364,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:ed900376500543ca05f2a2383e1f541b4606f19cd22f34acb81b17a0b90c7f3e"
+  digest = "1:70d519d5cddeb60ceda2db88c24c340b1b2d7efb25ab54bacb38f57ea1998df7"
   name = "golang.org/x/sys"
   packages = [
     "cpu",
     "unix",
   ]
   pruneopts = ""
-  revision = "d0be0721c37eeb5299f245a996a483160fc36940"
+  revision = "d641721ec2dead6fe5ca284096fe4b1fcd49e427"
 
 [[projects]]
   digest = "1:5acd3512b047305d49e8763eef7ba423901e85d5dd2fd1e71778a0ea8de10bd4"
@@ -410,11 +410,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:ed9ba02e3e3ad654d19e5f2207797fb28077c9f718caad4a6216dd66f4535e43"
+  digest = "1:b6225010c089d419d86aa7bc8e80f50364a9464adad138bb6b46f4012c052177"
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
   pruneopts = ""
-  revision = "5a2fd4cab2d6d4a18e70c34937662526cd0c4bd1"
+  revision = "c3f76f3b92d1ffa4c58a9ff842a58b8877655e0f"
 
 [[projects]]
   digest = "1:15656947b87a6a240e61dcfae9e71a55a8d5677f240d12ab48f02cdbabf1e309"
@@ -468,18 +468,6 @@
   pruneopts = ""
   revision = "b2cb9fa56473e98db8caba80237377e83fe44db5"
   version = "v1"
-
-[[projects]]
-  digest = "1:78c193a044c9c6f540da8158d8d8af12f3615d0261e7fa172e0cadcd05abd64f"
-  name = "gopkg.in/square/go-jose.v2"
-  packages = [
-    ".",
-    "cipher",
-    "json",
-  ]
-  pruneopts = ""
-  revision = "8254d6c783765f38c8675fae4427a1fe73fbd09d"
-  version = "v2.1.8"
 
 [solve-meta]
   analyzer-name = "dep"
