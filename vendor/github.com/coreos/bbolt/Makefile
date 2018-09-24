@@ -20,11 +20,11 @@ unused:
 
 # go get github.com/kisielk/errcheck
 errcheck:
-	@errcheck -ignorepkg=bytes -ignore=os:Remove go.etcd.io/bbolt
+	@errcheck -ignorepkg=bytes -ignore=os:Remove github.com/coreos/bbolt
 
 test:
 	go test -timeout 20m -v -coverprofile cover.out -covermode atomic
 	# Note: gets "program not an importable package" in out of path builds
-	go test -v ./cmd/bbolt
+	go test -v ./cmd/bolt
 
 .PHONY: race fmt errcheck test gosimple unused

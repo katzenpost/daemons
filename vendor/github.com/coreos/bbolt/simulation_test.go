@@ -1,4 +1,4 @@
-package bbolt_test
+package bolt_test
 
 import (
 	"bytes"
@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	bolt "go.etcd.io/bbolt"
+	"github.com/coreos/bbolt"
 )
 
 func TestSimulate_1op_1p(t *testing.T)     { testSimulate(t, nil, 1, 1, 1) }

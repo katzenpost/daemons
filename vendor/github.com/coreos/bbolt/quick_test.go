@@ -1,4 +1,4 @@
-package bbolt_test
+package bolt_test
 
 import (
 	"bytes"

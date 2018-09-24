@@ -1,4 +1,4 @@
-package bbolt
+package bolt
 
 import (
 	"fmt"
@@ -16,6 +16,8 @@ var (
 )
 
 const (
+	lockExt = ".lock"
+
 	// see https://msdn.microsoft.com/en-us/library/windows/desktop/aa365203(v=vs.85).aspx
 	flagLockExclusive       = 2
 	flagLockFailImmediately = 1
@@ -46,24 +48,28 @@ func fdatasync(db *DB) error {
 }
 
 // flock acquires an advisory lock on a file descriptor.
-func flock(db *DB, exclusive bool, timeout time.Duration) error {
+func flock(db *DB, mode os.FileMode, exclusive bool, timeout time.Duration) error {
+	// Create a separate lock file on windows because a process
+	// cannot share an exclusive lock on the same file. This is
+	// needed during Tx.WriteTo().
+	f, err := os.OpenFile(db.path+lockExt, os.O_CREATE, mode)
+	if err != nil {
+		return err
+	}
+	db.lockfile = f
+
 	var t time.Time
 	if timeout != 0 {
 		t = time.Now()
 	}
+	fd := f.Fd()
 	var flag uint32 = flagLockFailImmediately
 	if exclusive {
 		flag |= flagLockExclusive
 	}
 	for {
-		// Fix for https://github.com/etcd-io/bbolt/issues/121. Use byte-range
-		// -1..0 as the lock on the database file.
-		var m1 uint32 = (1 << 32) - 1 // -1 in a uint32
-		err := lockFileEx(syscall.Handle(db.file.Fd()), flag, 0, 1, 0, &syscall.Overlapped{
-			Offset:     m1,
-			OffsetHigh: m1,
-		})
-
+		// Attempt to obtain an exclusive lock.
+		err := lockFileEx(syscall.Handle(fd), flag, 0, 1, 0, &syscall.Overlapped{})
 		if err == nil {
 			return nil
 		} else if err != errLockViolation {
@@ -82,11 +88,9 @@ func flock(db *DB, exclusive bool, timeout time.Duration) error {
 
 // funlock releases an advisory lock on a file descriptor.
 func funlock(db *DB) error {
-	var m1 uint32 = (1 << 32) - 1 // -1 in a uint32
-	err := unlockFileEx(syscall.Handle(db.file.Fd()), 0, 1, 0, &syscall.Overlapped{
-		Offset:     m1,
-		OffsetHigh: m1,
-	})
+	err := unlockFileEx(syscall.Handle(db.lockfile.Fd()), 0, 1, 0, &syscall.Overlapped{})
+	db.lockfile.Close()
+	os.Remove(db.path + lockExt)
 	return err
 }
 

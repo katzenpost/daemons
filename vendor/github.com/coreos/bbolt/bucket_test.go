@@ -1,4 +1,4 @@
-package bbolt_test
+package bolt_test
 
 import (
 	"bytes"
@@ -13,7 +13,7 @@ import (
 	"testing"
 	"testing/quick"
 
-	bolt "go.etcd.io/bbolt"
+	"github.com/coreos/bbolt"
 )
 
 // Ensure that a bucket that gets a non-existent key returns nil.

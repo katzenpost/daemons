@@ -1,4 +1,4 @@
-package bbolt_test
+package bolt_test
 
 import (
 	"bytes"
@@ -11,7 +11,7 @@ import (
 	"testing"
 	"testing/quick"
 
-	bolt "go.etcd.io/bbolt"
+	"github.com/coreos/bbolt"
 )
 
 // Ensure that a cursor can return a reference to the bucket that created it.

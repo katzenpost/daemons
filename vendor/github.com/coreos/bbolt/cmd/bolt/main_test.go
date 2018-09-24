@@ -12,7 +12,8 @@ import (
 	"strconv"
 	"testing"
 
-	bolt "go.etcd.io/bbolt"
+	"github.com/coreos/bbolt"
+	"github.com/coreos/bbolt/cmd/bolt"
 )
 
 // Ensure the "info" command can print information about a database.

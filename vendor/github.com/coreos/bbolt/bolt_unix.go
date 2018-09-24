@@ -1,16 +1,17 @@
 // +build !windows,!plan9,!solaris
 
-package bbolt
+package bolt
 
 import (
 	"fmt"
+	"os"
 	"syscall"
 	"time"
 	"unsafe"
 )
 
 // flock acquires an advisory lock on a file descriptor.
-func flock(db *DB, exclusive bool, timeout time.Duration) error {
+func flock(db *DB, mode os.FileMode, exclusive bool, timeout time.Duration) error {
 	var t time.Time
 	if timeout != 0 {
 		t = time.Now()
@@ -55,9 +56,7 @@ func mmap(db *DB, sz int) error {
 	}
 
 	// Advise the kernel that the mmap is accessed randomly.
-	err = madvise(b, syscall.MADV_RANDOM)
-	if err != nil && err != syscall.ENOSYS {
-		// Ignore not implemented error in kernel because it still works.
+	if err := madvise(b, syscall.MADV_RANDOM); err != nil {
 		return fmt.Errorf("madvise: %s", err)
 	}
 

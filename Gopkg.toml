@@ -1,30 +1,30 @@
 # bbolt is a transitive dependency, and go dep favors v1.3.0, which is
 # lacking `Bucket.SetSequence()`.
-required = ["github.com/coreos/bbolt"]
+required = ["github.com/coreos/bbolt", "github.com/katzenpost/authority/nonvoting/server", "github.com/katzenpost/server"]
 
 # This is not ready yet.
 ignored = ["github.com/katzenpost/daemons/client"]
 
 [[override]]
-  version = "v0.0.3"
+  version = "=v0.0.3"
   name = "github.com/katzenpost/core"
 
 [[override]]
-  version = "v0.0.1"
+  version = "=v0.0.1"
   name = "github.com/katzenpost/minclient"
 
-[[constraint]]
-  version = "v0.0.3"
+[[override]]
+  version = "=v0.0.3"
   name = "github.com/katzenpost/authority"
 
-[[constraint]]
-  version = "v0.0.2"
+[[override]]
+  version = "=v0.0.2"
   name = "github.com/katzenpost/mailproxy"
 
-[[constraint]]
-  version = "v0.0.3"
+[[override]]
+  version = "=v0.0.3"
   name = "github.com/katzenpost/server"
 
-[[constraint]]
-  version = "1.3.1-coreos.6"
+[[override]]
+  version = "=1.3.1-coreos.6"
   name = "github.com/coreos/bbolt"
