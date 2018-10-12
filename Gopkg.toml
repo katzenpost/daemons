@@ -6,7 +6,7 @@ required = ["github.com/coreos/bbolt"]
 ignored = ["github.com/katzenpost/daemons/client"]
 
 [[override]]
-  branch = "add_srv.2"
+  branch = "add_srv.3"
   name = "github.com/katzenpost/core"
 
 [[override]]
@@ -14,7 +14,7 @@ ignored = ["github.com/katzenpost/daemons/client"]
   name = "github.com/katzenpost/minclient"
 
 [[constraint]]
-  branch = "add_srv.3"
+  branch = "add_srv.4"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
