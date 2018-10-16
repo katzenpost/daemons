@@ -3,7 +3,7 @@
 required = ["github.com/coreos/bbolt"]
 
 [[constraint]]
-  version = "1.3.1-coreos.6"
+  version = "v1.3.1-coreos.6"
   name = "github.com/coreos/bbolt"
 
 [[override]]
@@ -17,9 +17,6 @@ required = ["github.com/coreos/bbolt"]
 [[constraint]]
   version = "v0.0.6"
   name = "github.com/katzenpost/authority"
-
-# This is not ready yet.
-ignored = ["github.com/katzenpost/daemons/client"]
 
 [[constraint]]
   version = "v0.0.5"
