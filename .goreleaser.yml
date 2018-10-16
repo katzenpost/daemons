@@ -46,29 +46,6 @@ builds:
     ignore:
       - goos: darwin
         goarch: 386
-  -
-    main: ./mailproxy/main.go
-    binary: mailproxy
-    flags: |
-        -tags netgo -gcflags="-trimpath=$GOPATH" -asmflags="-trimpath=$GOPATH"
-    env:
-      - CGO_ENABLED=0
-    ldflags: |
-      -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -extldflags '-static'
-    goos:
-      - darwin
-      - freebsd
-      - linux
-      - netbsd
-      - openbsd
-    goarch:
-      - 386
-      - amd64
-      - arm
-      - arm64
-    ignore:
-      - goos: darwin
-        goarch: 386
 archive:
   name_template: "{{.ProjectName}}-{{.Version}}-{{.Os}}-{{.Arch}}"
   format: tar.gz
