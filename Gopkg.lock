@@ -42,6 +42,17 @@
 [[projects]]
   branch = "master"
   digest = "1:8fa55a6e302771a90a86ceae1ca3c0df4ef15d21092198e8313f61dde9eea963"
+<<<<<<< HEAD
+=======
+  name = "git.schwanenlied.me/yawning/chacha20"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e3b1f968fc6397b51d963fee8ec8711a47bc0ce8"
+
+[[projects]]
+  branch = "master"
+  digest = "1:8fa55a6e302771a90a86ceae1ca3c0df4ef15d21092198e8313f61dde9eea963"
+>>>>>>> voting_release
   name = "git.schwanenlied.me/yawning/chacha20.git"
   packages = ["."]
   pruneopts = "UT"
@@ -56,12 +67,21 @@
   revision = "9598792ba8f205d72c9b5b639b0d2827cbb7d8b9"
 
 [[projects]]
+<<<<<<< HEAD
   digest = "1:b16fbfbcc20645cb419f78325bb2e85ec729b338e996a228124d68931a6f2a37"
   name = "github.com/BurntSushi/toml"
   packages = ["."]
   pruneopts = "UT"
   revision = "b26d9c308763d68093482582cea63d69be07a0f0"
   version = "v0.3.0"
+=======
+  digest = "1:9f3b30d9f8e0d7040f729b82dcbc8f0dead820a133b3147ce355fc451f32d761"
+  name = "github.com/BurntSushi/toml"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3012a1dbe2e4bd1391d42b32f0577cb7bbc7f005"
+  version = "v0.3.1"
+>>>>>>> voting_release
 
 [[projects]]
   branch = "master"
@@ -99,6 +119,28 @@
   version = "v1.1.0"
 
 [[projects]]
+<<<<<<< HEAD
+=======
+  digest = "1:90f6e3a87e2647608b03bd474a485af2dffadcf3c7108d39f01b6f46e8aafec8"
+  name = "github.com/emersion/go-message"
+  packages = [
+    ".",
+    "charset",
+  ]
+  pruneopts = "UT"
+  revision = "f7e2be8074d097a816a1f5bd9d502adc46275d4a"
+  version = "v0.9.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:47fffd6812689e229e8072737578af99cad0b17707cc07c36344c63bb6b797f1"
+  name = "github.com/emersion/go-textwrapper"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "d0e65e56babe3f687ff94c1d764ca0e6aa7723ee"
+
+[[projects]]
+>>>>>>> voting_release
   digest = "1:4c0989ca0bcd10799064318923b9bc2db6b4d6338dd75f3f2d86c3511aaaf5cf"
   name = "github.com/golang/protobuf"
   packages = [
@@ -114,6 +156,7 @@
 
 [[projects]]
   branch = "master"
+<<<<<<< HEAD
   digest = "1:d900a5ae66a3181783dbf38e4a23505cdabd3e8e881c3d49ae8aa498b571b886"
   name = "github.com/hashicorp/go-hclog"
   packages = ["."]
@@ -127,6 +170,21 @@
   packages = ["."]
   pruneopts = "UT"
   revision = "a4620f9913d19f03a6bf19b2f304daaaf83ea130"
+=======
+  digest = "1:0876aeb6edb07e20b6b0ce1d346655cb63dbe0a26ccfb47b68a9b7697709777b"
+  name = "github.com/hashicorp/go-hclog"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "61d530d6c27f994fb6c83b80f99a69c54125ec8a"
+
+[[projects]]
+  branch = "master"
+  digest = "1:880e48599e7f65dd85eed8092d63ebcbc73715491aec1a857adbce6d9d51d1ac"
+  name = "github.com/hashicorp/go-plugin"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "314501b665e0b2cc71bbd829783179fc38840a85"
+>>>>>>> voting_release
 
 [[projects]]
   branch = "master"
@@ -134,7 +192,11 @@
   name = "github.com/hashicorp/yamux"
   packages = ["."]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "7221087c3d281fda5f794e28c2ea4c6e4d5c4558"
+=======
+  revision = "2f1d1f20f75d5404f53b9edf6b53ed5505508675"
+>>>>>>> voting_release
 
 [[projects]]
   digest = "1:8dfbec76b4834d96c37ba4c4969fc47c9a15e67c5a7eecfa031fbe67dab50429"
@@ -152,7 +214,12 @@
   version = "v3.2.0"
 
 [[projects]]
+<<<<<<< HEAD
   digest = "1:ecf8493ce747f1b94848abb9187b2efd42470082192c309a2e041d33edc62d39"
+=======
+  branch = "voting_release"
+  digest = "1:1aa6aba24c31b66785300e6c35743a9f66e84166b77f09057da485ba3654a727"
+>>>>>>> voting_release
   name = "github.com/katzenpost/authority"
   packages = [
     "internal/s11n",
@@ -160,11 +227,19 @@
     "nonvoting/server",
     "nonvoting/server/config",
     "voting/client",
+<<<<<<< HEAD
     "voting/server/config",
   ]
   pruneopts = "UT"
   revision = "60573c04d513bf6e4c9acf6316130a93417c924e"
   version = "v0.0.6"
+=======
+    "voting/server",
+    "voting/server/config",
+  ]
+  pruneopts = "UT"
+  revision = "20edd849f864f165801bd14d2566fc8769849f8c"
+>>>>>>> voting_release
 
 [[projects]]
   branch = "master"
@@ -184,6 +259,10 @@
   revision = "e57ca6354a32b7479147e701fd05e729e6f3aa6e"
 
 [[projects]]
+<<<<<<< HEAD
+=======
+  branch = "voting_release"
+>>>>>>> voting_release
   digest = "1:797c4c6bcd10662d6a14127cae879926bd77886da2e98308ffe6a4cc649d78da"
   name = "github.com/katzenpost/core"
   packages = [
@@ -209,6 +288,7 @@
     "worker",
   ]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "2abca1ed235658373bb316f590036865f13e2624"
   version = "v0.0.5"
 
@@ -219,6 +299,40 @@
   pruneopts = "UT"
   revision = "92610393b47634bf1cdeb2521a3bc70dc43ef9d5"
   version = "v0.0.3"
+=======
+  revision = "323958cef93454884693de96206eff56981a79bb"
+
+[[projects]]
+  branch = "voting_release"
+  digest = "1:1abce61aab0427450a29853cbe924b02bd341fdc9594dfc3107aa75cb82b49f5"
+  name = "github.com/katzenpost/mailproxy"
+  packages = [
+    ".",
+    "config",
+    "event",
+    "internal/account",
+    "internal/authority",
+    "internal/glue",
+    "internal/imf",
+    "internal/pkiclient",
+    "internal/pop3",
+    "internal/proxy",
+    "internal/recipient",
+  ]
+  pruneopts = "UT"
+  revision = "02c548eef572673f5baf10bc68b51c9279cde7f2"
+
+[[projects]]
+  digest = "1:354aba7b157c4e10efbce838f2e95743249d53fa395d59b1547de544c87f69ea"
+  name = "github.com/katzenpost/minclient"
+  packages = [
+    ".",
+    "block",
+  ]
+  pruneopts = "UT"
+  revision = "53eda57a23d7fc1939d8ee7798cb9c04ab2fe0bf"
+  version = "v0.0.2"
+>>>>>>> voting_release
 
 [[projects]]
   branch = "master"
@@ -229,7 +343,12 @@
   revision = "08e83772a9119dc0b35028bc6d8412dc22b0a9ee"
 
 [[projects]]
+<<<<<<< HEAD
   digest = "1:4b7ba6c946794664f88b041ddf26e0a7950e97a418f82505936137e305de8f22"
+=======
+  branch = "voting_release"
+  digest = "1:778ad653f873cb3b52de171e3e309ddd3864709eb99ce92c4956a0be56d2e0a3"
+>>>>>>> voting_release
   name = "github.com/katzenpost/server"
   packages = [
     ".",
@@ -259,8 +378,12 @@
     "userdb/externuserdb",
   ]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "dc85897386ae7acd5b108d0f8013f42cf1ebad89"
   version = "v0.0.5"
+=======
+  revision = "f5cac6025e4d6f293521699fb32f77849fcdd555"
+>>>>>>> voting_release
 
 [[projects]]
   digest = "1:42eb1f52b84a06820cedc9baec2e710bfbda3ee6dac6cdb97f8b9a5066134ec6"
@@ -287,6 +410,17 @@
   version = "v0.8.0"
 
 [[projects]]
+<<<<<<< HEAD
+=======
+  branch = "master"
+  digest = "1:c11885edc04a1f70bd6499b23ea024dcb4a4937932c7689d9ddc40c407d32ecf"
+  name = "github.com/siebenmann/smtpd"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "b93303610bbe1b2cc570daff2de7d77dfac329a0"
+
+[[projects]]
+>>>>>>> voting_release
   digest = "1:03aa6e485e528acb119fb32901cf99582c380225fc7d5a02758e08b180cb56c3"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -311,11 +445,19 @@
     "sha3",
   ]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "0e37d006457bf46f9e6692014ba72ef82c33022c"
 
 [[projects]]
   branch = "master"
   digest = "1:2da0deadea2979244e8b56a207c9712125b2fe86e5bf83da2c7776e3d9addfbb"
+=======
+  revision = "a92615f3c49003920a58dedcf32cf55022cefb8d"
+
+[[projects]]
+  branch = "master"
+  digest = "1:603eae000979b9edbde5b70f2f3c5227014815b688e4b60d3bc940a289138409"
+>>>>>>> voting_release
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -329,21 +471,36 @@
     "trace",
   ]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "26e67e76b6c3f6ce91f7c52def5af501b4e0f3a2"
 
 [[projects]]
   branch = "master"
   digest = "1:f154ed6bdd7f4d63e6d9feee4af669d3d0a340f1a5d8d77294e99edd12ba0e22"
+=======
+  revision = "49bb7cea24b1df9410e1712aa6433dae904ff66a"
+
+[[projects]]
+  branch = "master"
+  digest = "1:e65f81b7d400b57807c8dd9274caf9ff9d68ce7fe45a5058192edf40d4d95822"
+>>>>>>> voting_release
   name = "golang.org/x/sys"
   packages = [
     "cpu",
     "unix",
   ]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "d641721ec2dead6fe5ca284096fe4b1fcd49e427"
 
 [[projects]]
   digest = "1:2b43038ba580394ec711455c92dc9c89f3c29ad758136afe6aef01685ef3b557"
+=======
+  revision = "fa43e7bc11baaae89f3f902b2b4d832b68234844"
+
+[[projects]]
+  digest = "1:4c3c045deaf0ae4d4b14f3abd22bbd322693d1bee1cc59b1e1667fdd3b683e0e"
+>>>>>>> voting_release
   name = "golang.org/x/text"
   packages = [
     "cases",
@@ -376,7 +533,11 @@
   name = "google.golang.org/genproto"
   packages = ["googleapis/rpc/status"]
   pruneopts = "UT"
+<<<<<<< HEAD
   revision = "c3f76f3b92d1ffa4c58a9ff842a58b8877655e0f"
+=======
+  revision = "af9cb2a35e7f169ec875002c1829c9b315cddc04"
+>>>>>>> voting_release
 
 [[projects]]
   digest = "1:1b6d2676ea895d33cbd1999c75dfc8e25b103c754ccfc66dc06ae845ce3a47bc"
@@ -435,13 +596,176 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "git.schwanenlied.me/yawning/aez.git",
+    "git.schwanenlied.me/yawning/avl.git",
+    "git.schwanenlied.me/yawning/bloom.git",
+    "git.schwanenlied.me/yawning/bsaes.git",
+    "git.schwanenlied.me/yawning/bsaes.git/ct32",
+    "git.schwanenlied.me/yawning/bsaes.git/ct64",
+    "git.schwanenlied.me/yawning/bsaes.git/ghash",
+    "git.schwanenlied.me/yawning/bsaes.git/internal/modes",
+    "git.schwanenlied.me/yawning/chacha20",
+    "git.schwanenlied.me/yawning/chacha20.git",
+    "git.schwanenlied.me/yawning/newhope.git",
+    "github.com/BurntSushi/toml",
+    "github.com/agl/ed25519/edwards25519",
+    "github.com/agl/ed25519/extra25519",
     "github.com/coreos/bbolt",
+    "github.com/dchest/siphash",
+    "github.com/eapache/queue",
+    "github.com/emersion/go-message",
+    "github.com/emersion/go-message/charset",
+    "github.com/emersion/go-textwrapper",
+    "github.com/golang/protobuf/proto",
+    "github.com/golang/protobuf/ptypes",
+    "github.com/golang/protobuf/ptypes/any",
+    "github.com/golang/protobuf/ptypes/duration",
+    "github.com/golang/protobuf/ptypes/timestamp",
+    "github.com/hashicorp/go-hclog",
+    "github.com/hashicorp/go-plugin",
+    "github.com/hashicorp/yamux",
+    "github.com/jackc/pgx",
+    "github.com/jackc/pgx/chunkreader",
+    "github.com/jackc/pgx/internal/sanitize",
+    "github.com/jackc/pgx/pgio",
+    "github.com/jackc/pgx/pgproto3",
+    "github.com/jackc/pgx/pgtype",
+    "github.com/katzenpost/authority/internal/s11n",
+    "github.com/katzenpost/authority/nonvoting/client",
     "github.com/katzenpost/authority/nonvoting/server",
     "github.com/katzenpost/authority/nonvoting/server/config",
+<<<<<<< HEAD
     "github.com/katzenpost/client",
     "github.com/katzenpost/client/config",
+=======
+    "github.com/katzenpost/authority/voting/client",
+    "github.com/katzenpost/authority/voting/server",
+    "github.com/katzenpost/authority/voting/server/config",
+    "github.com/katzenpost/client",
+    "github.com/katzenpost/client/config",
+    "github.com/katzenpost/client/constants",
+    "github.com/katzenpost/client/internal/pkiclient",
+    "github.com/katzenpost/client/internal/proxy",
+    "github.com/katzenpost/client/poisson",
+    "github.com/katzenpost/client/session",
+    "github.com/katzenpost/client/utils",
+    "github.com/katzenpost/core/constants",
+    "github.com/katzenpost/core/crypto/cert",
+    "github.com/katzenpost/core/crypto/ecdh",
+    "github.com/katzenpost/core/crypto/eddsa",
+    "github.com/katzenpost/core/crypto/rand",
+    "github.com/katzenpost/core/epochtime",
+    "github.com/katzenpost/core/log",
+    "github.com/katzenpost/core/monotime",
+    "github.com/katzenpost/core/pki",
+    "github.com/katzenpost/core/queue",
+    "github.com/katzenpost/core/sphinx",
+    "github.com/katzenpost/core/sphinx/commands",
+    "github.com/katzenpost/core/sphinx/constants",
+    "github.com/katzenpost/core/sphinx/internal/crypto",
+    "github.com/katzenpost/core/sphinx/path",
+    "github.com/katzenpost/core/thwack",
+    "github.com/katzenpost/core/utils",
+    "github.com/katzenpost/core/wire",
+    "github.com/katzenpost/core/wire/commands",
+    "github.com/katzenpost/core/worker",
+    "github.com/katzenpost/mailproxy",
+    "github.com/katzenpost/mailproxy/config",
+    "github.com/katzenpost/mailproxy/event",
+    "github.com/katzenpost/mailproxy/internal/account",
+    "github.com/katzenpost/mailproxy/internal/authority",
+    "github.com/katzenpost/mailproxy/internal/glue",
+    "github.com/katzenpost/mailproxy/internal/imf",
+    "github.com/katzenpost/mailproxy/internal/pkiclient",
+    "github.com/katzenpost/mailproxy/internal/pop3",
+    "github.com/katzenpost/mailproxy/internal/proxy",
+    "github.com/katzenpost/mailproxy/internal/recipient",
+    "github.com/katzenpost/minclient",
+    "github.com/katzenpost/minclient/block",
+    "github.com/katzenpost/noise",
+>>>>>>> voting_release
     "github.com/katzenpost/server",
     "github.com/katzenpost/server/config",
+    "github.com/katzenpost/server/internal/constants",
+    "github.com/katzenpost/server/internal/cryptoworker",
+    "github.com/katzenpost/server/internal/debug",
+    "github.com/katzenpost/server/internal/decoy",
+    "github.com/katzenpost/server/internal/glue",
+    "github.com/katzenpost/server/internal/incoming",
+    "github.com/katzenpost/server/internal/mixkey",
+    "github.com/katzenpost/server/internal/outgoing",
+    "github.com/katzenpost/server/internal/packet",
+    "github.com/katzenpost/server/internal/pki",
+    "github.com/katzenpost/server/internal/pkicache",
+    "github.com/katzenpost/server/internal/provider",
+    "github.com/katzenpost/server/internal/provider/kaetzchen",
+    "github.com/katzenpost/server/internal/scheduler",
+    "github.com/katzenpost/server/internal/sqldb",
+    "github.com/katzenpost/server/plugin",
+    "github.com/katzenpost/server/plugin/proto",
+    "github.com/katzenpost/server/registration",
+    "github.com/katzenpost/server/spool",
+    "github.com/katzenpost/server/spool/boltspool",
+    "github.com/katzenpost/server/userdb",
+    "github.com/katzenpost/server/userdb/boltuserdb",
+    "github.com/katzenpost/server/userdb/externuserdb",
+    "github.com/mitchellh/go-testing-interface",
+    "github.com/oklog/run",
+    "github.com/pkg/errors",
+    "github.com/siebenmann/smtpd",
+    "github.com/ugorji/go/codec",
+    "golang.org/x/crypto/blake2b",
+    "golang.org/x/crypto/blake2s",
+    "golang.org/x/crypto/chacha20poly1305",
+    "golang.org/x/crypto/curve25519",
+    "golang.org/x/crypto/ed25519",
+    "golang.org/x/crypto/ed25519/internal/edwards25519",
+    "golang.org/x/crypto/internal/subtle",
+    "golang.org/x/crypto/sha3",
+    "golang.org/x/net/context",
+    "golang.org/x/net/http2",
+    "golang.org/x/net/http2/hpack",
+    "golang.org/x/net/idna",
+    "golang.org/x/net/proxy",
+    "golang.org/x/sys/cpu",
+    "golang.org/x/sys/unix",
+    "golang.org/x/text/collate",
+    "golang.org/x/text/encoding",
+    "golang.org/x/text/encoding/charmap",
+    "golang.org/x/text/encoding/internal/identifier",
+    "golang.org/x/text/encoding/japanese",
+    "golang.org/x/text/encoding/simplifiedchinese",
+    "golang.org/x/text/encoding/traditionalchinese",
+    "golang.org/x/text/internal/gen",
+    "golang.org/x/text/internal/ucd",
+    "golang.org/x/text/language",
+    "golang.org/x/text/secure/precis",
+    "golang.org/x/text/transform",
+    "golang.org/x/text/unicode/bidi",
+    "golang.org/x/text/unicode/rangetable",
+    "google.golang.org/genproto/googleapis/rpc/status",
+    "google.golang.org/grpc",
+    "google.golang.org/grpc/balancer",
+    "google.golang.org/grpc/balancer/base",
+    "google.golang.org/grpc/codes",
+    "google.golang.org/grpc/connectivity",
+    "google.golang.org/grpc/credentials",
+    "google.golang.org/grpc/encoding",
+    "google.golang.org/grpc/grpclog",
+    "google.golang.org/grpc/health",
+    "google.golang.org/grpc/health/grpc_health_v1",
+    "google.golang.org/grpc/internal/backoff",
+    "google.golang.org/grpc/internal/channelz",
+    "google.golang.org/grpc/internal/grpcrand",
+    "google.golang.org/grpc/keepalive",
+    "google.golang.org/grpc/metadata",
+    "google.golang.org/grpc/peer",
+    "google.golang.org/grpc/resolver",
+    "google.golang.org/grpc/stats",
+    "google.golang.org/grpc/status",
+    "google.golang.org/grpc/tap",
+    "gopkg.in/eapache/channels.v1",
+    "gopkg.in/op/go-logging.v1",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
