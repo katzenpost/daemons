@@ -184,23 +184,6 @@
   version = "v0.0.6"
 
 [[projects]]
-  branch = "master"
-  digest = "1:d671acb038dfb24db83dce5bf883718248ad1151baec61ebdc9a3a2410a1dc4c"
-  name = "github.com/katzenpost/client"
-  packages = [
-    ".",
-    "config",
-    "constants",
-    "internal/pkiclient",
-    "internal/proxy",
-    "poisson",
-    "session",
-    "utils",
-  ]
-  pruneopts = "UT"
-  revision = "e57ca6354a32b7479147e701fd05e729e6f3aa6e"
-
-[[projects]]
   digest = "1:797c4c6bcd10662d6a14127cae879926bd77886da2e98308ffe6a4cc649d78da"
   name = "github.com/katzenpost/core"
   packages = [
@@ -228,14 +211,6 @@
   pruneopts = "UT"
   revision = "2abca1ed235658373bb316f590036865f13e2624"
   version = "v0.0.5"
-
-[[projects]]
-  digest = "1:d60232c60dfa94b995859673e585b63e2ef9a9f7910fb792f2d6dfe9a3633ca2"
-  name = "github.com/katzenpost/minclient"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "92610393b47634bf1cdeb2521a3bc70dc43ef9d5"
-  version = "v0.0.3"
 
 [[projects]]
   branch = "master"
@@ -348,7 +323,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:2da0deadea2979244e8b56a207c9712125b2fe86e5bf83da2c7776e3d9addfbb"
+  digest = "1:deafe4ab271911fec7de5b693d7faae3f38796d9eb8622e2b9e7df42bb3dfea9"
   name = "golang.org/x/net"
   packages = [
     "context",
@@ -356,9 +331,7 @@
     "http2",
     "http2/hpack",
     "idna",
-    "internal/socks",
     "internal/timeseries",
-    "proxy",
     "trace",
   ]
   pruneopts = "UT"
@@ -473,8 +446,6 @@
     "github.com/katzenpost/authority/nonvoting/server/config",
     "github.com/katzenpost/authority/voting/server",
     "github.com/katzenpost/authority/voting/server/config",
-    "github.com/katzenpost/client",
-    "github.com/katzenpost/client/config",
     "github.com/katzenpost/core/crypto/eddsa",
     "github.com/katzenpost/core/crypto/rand",
     "github.com/katzenpost/server",
