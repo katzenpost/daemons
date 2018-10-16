@@ -99,25 +99,6 @@
   version = "v1.1.0"
 
 [[projects]]
-  digest = "1:90f6e3a87e2647608b03bd474a485af2dffadcf3c7108d39f01b6f46e8aafec8"
-  name = "github.com/emersion/go-message"
-  packages = [
-    ".",
-    "charset",
-  ]
-  pruneopts = "UT"
-  revision = "f7e2be8074d097a816a1f5bd9d502adc46275d4a"
-  version = "v0.9.1"
-
-[[projects]]
-  branch = "master"
-  digest = "1:47fffd6812689e229e8072737578af99cad0b17707cc07c36344c63bb6b797f1"
-  name = "github.com/emersion/go-textwrapper"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "d0e65e56babe3f687ff94c1d764ca0e6aa7723ee"
-
-[[projects]]
   digest = "1:4c0989ca0bcd10799064318923b9bc2db6b4d6338dd75f3f2d86c3511aaaf5cf"
   name = "github.com/golang/protobuf"
   packages = [
@@ -232,32 +213,9 @@
   version = "v0.0.5"
 
 [[projects]]
-  digest = "1:1db6735efabf423b871f553f8e39de2460b454eebe5f7f4b99b0b601eef4fd27"
-  name = "github.com/katzenpost/mailproxy"
-  packages = [
-    ".",
-    "config",
-    "event",
-    "internal/account",
-    "internal/authority",
-    "internal/glue",
-    "internal/imf",
-    "internal/pkiclient",
-    "internal/pop3",
-    "internal/proxy",
-    "internal/recipient",
-  ]
-  pruneopts = "UT"
-  revision = "55d0f4b10f7c6c0617030e8db7e1398876986c45"
-  version = "v0.0.3"
-
-[[projects]]
-  digest = "1:72c81985b0a9cd4ff5fb24319dd0d7c7895a6c3690c4acb17c29de5135b1d934"
+  digest = "1:d60232c60dfa94b995859673e585b63e2ef9a9f7910fb792f2d6dfe9a3633ca2"
   name = "github.com/katzenpost/minclient"
-  packages = [
-    ".",
-    "block",
-  ]
+  packages = ["."]
   pruneopts = "UT"
   revision = "92610393b47634bf1cdeb2521a3bc70dc43ef9d5"
   version = "v0.0.3"
@@ -329,14 +287,6 @@
   version = "v0.8.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:c11885edc04a1f70bd6499b23ea024dcb4a4937932c7689d9ddc40c407d32ecf"
-  name = "github.com/siebenmann/smtpd"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "b93303610bbe1b2cc570daff2de7d77dfac329a0"
-
-[[projects]]
   digest = "1:03aa6e485e528acb119fb32901cf99582c380225fc7d5a02758e08b180cb56c3"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -393,19 +343,12 @@
   revision = "d641721ec2dead6fe5ca284096fe4b1fcd49e427"
 
 [[projects]]
-  digest = "1:4c3c045deaf0ae4d4b14f3abd22bbd322693d1bee1cc59b1e1667fdd3b683e0e"
+  digest = "1:2b43038ba580394ec711455c92dc9c89f3c29ad758136afe6aef01685ef3b557"
   name = "golang.org/x/text"
   packages = [
     "cases",
     "collate",
     "collate/build",
-    "encoding",
-    "encoding/charmap",
-    "encoding/internal",
-    "encoding/internal/identifier",
-    "encoding/japanese",
-    "encoding/simplifiedchinese",
-    "encoding/traditionalchinese",
     "internal",
     "internal/colltab",
     "internal/gen",
@@ -497,9 +440,6 @@
     "github.com/katzenpost/authority/nonvoting/server/config",
     "github.com/katzenpost/client",
     "github.com/katzenpost/client/config",
-    "github.com/katzenpost/mailproxy",
-    "github.com/katzenpost/mailproxy/config",
-    "github.com/katzenpost/mailproxy/event",
     "github.com/katzenpost/server",
     "github.com/katzenpost/server/config",
   ]
