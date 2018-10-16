@@ -42,6 +42,14 @@
 [[projects]]
   branch = "master"
   digest = "1:8fa55a6e302771a90a86ceae1ca3c0df4ef15d21092198e8313f61dde9eea963"
+  name = "git.schwanenlied.me/yawning/chacha20"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "e3b1f968fc6397b51d963fee8ec8711a47bc0ce8"
+
+[[projects]]
+  branch = "master"
+  digest = "1:8fa55a6e302771a90a86ceae1ca3c0df4ef15d21092198e8313f61dde9eea963"
   name = "git.schwanenlied.me/yawning/chacha20.git"
   packages = ["."]
   pruneopts = "UT"
@@ -81,6 +89,14 @@
   pruneopts = "UT"
   revision = "7ee3ded59d4835e10f3e7d0f7603c42aa5e83820"
   version = "v1.3.1-etcd.8"
+
+[[projects]]
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  pruneopts = "UT"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
 
 [[projects]]
   digest = "1:2915e1464ca9a9480ed2fb94d6939cdf418525b03b24bfb256486990abd8155a"
@@ -152,7 +168,7 @@
   version = "v3.2.0"
 
 [[projects]]
-  digest = "1:ecf8493ce747f1b94848abb9187b2efd42470082192c309a2e041d33edc62d39"
+  digest = "1:5ff5f53e8fcd2fb26748b43528f491f497757c42c87d5b54951da0c1e8bafb26"
   name = "github.com/katzenpost/authority"
   packages = [
     "internal/s11n",
@@ -160,6 +176,7 @@
     "nonvoting/server",
     "nonvoting/server/config",
     "voting/client",
+    "voting/server",
     "voting/server/config",
   ]
   pruneopts = "UT"
@@ -285,6 +302,22 @@
   pruneopts = "UT"
   revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
   version = "v0.8.0"
+
+[[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  pruneopts = "UT"
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:18752d0b95816a1b777505a97f71c7467a8445b8ffb55631a7bf779f6ba4fa83"
+  name = "github.com/stretchr/testify"
+  packages = ["assert"]
+  pruneopts = "UT"
+  revision = "f35b8ab0b5a2cef36673838d662e249dd9c94686"
+  version = "v1.2.2"
 
 [[projects]]
   digest = "1:03aa6e485e528acb119fb32901cf99582c380225fc7d5a02758e08b180cb56c3"
@@ -438,10 +471,15 @@
     "github.com/coreos/bbolt",
     "github.com/katzenpost/authority/nonvoting/server",
     "github.com/katzenpost/authority/nonvoting/server/config",
+    "github.com/katzenpost/authority/voting/server",
+    "github.com/katzenpost/authority/voting/server/config",
     "github.com/katzenpost/client",
     "github.com/katzenpost/client/config",
+    "github.com/katzenpost/core/crypto/eddsa",
+    "github.com/katzenpost/core/crypto/rand",
     "github.com/katzenpost/server",
     "github.com/katzenpost/server/config",
+    "github.com/stretchr/testify/assert",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
