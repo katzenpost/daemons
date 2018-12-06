@@ -168,7 +168,7 @@
   version = "v3.2.0"
 
 [[projects]]
-  digest = "1:5ff5f53e8fcd2fb26748b43528f491f497757c42c87d5b54951da0c1e8bafb26"
+  digest = "1:d933eca5fdbfaedb996f8c955107b6669c6ba72d5a75be17cab42833b7c10db8"
   name = "github.com/katzenpost/authority"
   packages = [
     "internal/s11n",
@@ -180,8 +180,8 @@
     "voting/server/config",
   ]
   pruneopts = "UT"
-  revision = "60573c04d513bf6e4c9acf6316130a93417c924e"
-  version = "v0.0.6"
+  revision = "37313cf0f4143b5621f8dd53b5d8b397870b7c29"
+  version = "v0.0.7"
 
 [[projects]]
   digest = "1:b198e03d62ca628d4ab31a88e737faa11e4699e2b228951f55982f2383459d55"

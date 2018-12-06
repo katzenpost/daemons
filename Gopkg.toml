@@ -15,7 +15,7 @@ required = ["github.com/coreos/bbolt"]
   name = "github.com/katzenpost/minclient"
 
 [[constraint]]
-  version = "v0.0.6"
+  version = "v0.0.7"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
