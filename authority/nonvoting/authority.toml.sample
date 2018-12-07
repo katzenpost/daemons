@@ -37,6 +37,9 @@
 
 [Parameters]
 
+  # Send rate per minute rating limiting.
+  SendRatePerMinute = 100
+
   # Lambda is the inverse of the mean of the exponential distribution that
   # clients will use to sample delays.
   MixLambda = 0.00025
