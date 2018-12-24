@@ -45,6 +45,9 @@
 
 [Parameters]
 
+  # Send rate per minute rating limiting.
+  SendRatePerMinute = 100
+
   # MixLambda is the inverse of the mean of the exponential distribution that
   # clients will use to sample delays.
   MixLambda = 0.00025
@@ -58,6 +61,17 @@
   # SendLambda is the mean of the poisson distribution that clients will use
   # to sample the send scheduling interval (seconds).
   SendLambda = 15.0
+
+  # SendMaxInterval is the maximum send interval in milliseconds.
+  SendMaxInterval = 123000
+
+  # MixLoopLambda is the inverse of the mean of the exponential distribution
+  # that clients will sample to determine send timing of loop decoy messages.
+  MixLoopLambda = 15.0
+
+  # MixLoopMaxInterval is the maximum send interval in milliseconds.
+  MixLoopMaxInterval = 123000
+
 
 #
 # The Mixes array defines the list of white-listed non-provider nodes.
