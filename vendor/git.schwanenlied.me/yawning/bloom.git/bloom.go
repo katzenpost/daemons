@@ -58,9 +58,8 @@ func DeriveSize(n int, p float64) int {
 // postive rate p.
 func New(rand io.Reader, mLn2 int, p float64) (*Filter, error) {
 	const (
-		ln2Sq       = 0.48045301391820139
-		maxMln2     = strconv.IntSize - 1
-		maxHeapSize = 1 << 39 // 512 GiB
+		ln2Sq   = 0.48045301391820139
+		maxMln2 = strconv.IntSize - 1
 	)
 
 	var key [16]byte
@@ -79,16 +78,6 @@ func New(rand io.Reader, mLn2 int, p float64) (*Filter, error) {
 	m := 1 << uint64(mLn2)
 	n := -1.0 * float64(m) * ln2Sq / math.Log(p)
 	k := int((float64(m) * ln2 / n) + 0.5)
-
-	// The Go runtime library has a maximum heap size limit, currently set to
-	// 512 GiB.  Exceeding said limit will result in a panic, so catch this
-	// condition (https://github.com/golang/go/issues/10460).
-	//
-	// Note: Go on Windows has a 32 GiB limit, but I don't give a fuck about
-	// Windows.
-	if m/8 >= maxHeapSize {
-		return nil, fmt.Errorf("requested filter too large (heap size): %d", mLn2)
-	}
 
 	if uint64(n) > (1 << uint(maxMln2)) {
 		return nil, fmt.Errorf("requested filter too large (nrEntriesMax overflow): %d", mLn2)

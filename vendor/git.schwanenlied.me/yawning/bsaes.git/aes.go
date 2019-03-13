@@ -26,13 +26,15 @@ package bsaes
 import (
 	"crypto/aes"
 	"crypto/cipher"
-	"errors"
 	"math"
 	"runtime"
 
 	"git.schwanenlied.me/yawning/bsaes.git/ct32"
 	"git.schwanenlied.me/yawning/bsaes.git/ct64"
 )
+
+// BlockSize is the AES block size in bytes.
+const BlockSize = aes.BlockSize
 
 var (
 	useCryptoAES = false
@@ -50,7 +52,7 @@ func NewCipher(key []byte) (cipher.Block, error) {
 	switch len(key) {
 	case 16, 24, 32:
 	default:
-		return nil, errors.New("aes: Invalid key size")
+		return nil, aes.KeySizeError(len(key))
 	}
 	if useCryptoAES {
 		return aes.NewCipher(key)
