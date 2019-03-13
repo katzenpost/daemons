@@ -7,19 +7,19 @@ required = ["github.com/coreos/bbolt"]
   name = "github.com/coreos/bbolt"
 
 [[override]]
-  version = "v0.0.6"
+  branch = "master"
   name = "github.com/katzenpost/core"
 
 [[override]]
-  version = "v0.0.4"
+  branch = "master"
   name = "github.com/katzenpost/minclient"
 
 [[constraint]]
-  version = "v0.0.7"
+  branch = "master"
   name = "github.com/katzenpost/authority"
 
 [[constraint]]
-  version = "v0.0.6"
+  branch = "master"
   name = "github.com/katzenpost/server"
 
 
