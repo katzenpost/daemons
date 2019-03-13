@@ -171,7 +171,8 @@
   version = "v3.3.0"
 
 [[projects]]
-  digest = "1:d933eca5fdbfaedb996f8c955107b6669c6ba72d5a75be17cab42833b7c10db8"
+  branch = "master"
+  digest = "1:1e3a48a6725d43392edaec23d2cfbf08b810aa62ecd03c9733e41bc3f607a868"
   name = "github.com/katzenpost/authority"
   packages = [
     "internal/s11n",
@@ -183,11 +184,11 @@
     "voting/server/config",
   ]
   pruneopts = "UT"
-  revision = "37313cf0f4143b5621f8dd53b5d8b397870b7c29"
-  version = "v0.0.7"
+  revision = "b4f2f222ebdc32b0ae62b2e0a97d5b1635f93702"
 
 [[projects]]
-  digest = "1:b198e03d62ca628d4ab31a88e737faa11e4699e2b228951f55982f2383459d55"
+  branch = "master"
+  digest = "1:612c4bf45ff381af1cdaa145c4d06a11b1d4e7647047447461ac6f008bc1231d"
   name = "github.com/katzenpost/core"
   packages = [
     "constants",
@@ -212,8 +213,7 @@
     "worker",
   ]
   pruneopts = "UT"
-  revision = "0213ae4e0d0ee7a53f238e39535430bfeb49cfc2"
-  version = "v0.0.6"
+  revision = "69642c3dfb77b8542228716f9466af0ea8948382"
 
 [[projects]]
   branch = "master"
@@ -224,7 +224,8 @@
   revision = "08e83772a9119dc0b35028bc6d8412dc22b0a9ee"
 
 [[projects]]
-  digest = "1:5c5fd30df6181f3e02478337f281022534e390bd77324851dbee24b17544fe11"
+  branch = "master"
+  digest = "1:2272f11c23d21334bcce53e4a8fc49628143bc28e68beb55fea8fce04dca09c6"
   name = "github.com/katzenpost/server"
   packages = [
     ".",
@@ -254,8 +255,7 @@
     "userdb/externuserdb",
   ]
   pruneopts = "UT"
-  revision = "870960324fc553f54da4645edc081dc35d269a29"
-  version = "v0.0.6"
+  revision = "5a5a058c31123f936060584769e01c44e6185700"
 
 [[projects]]
   digest = "1:42eb1f52b84a06820cedc9baec2e710bfbda3ee6dac6cdb97f8b9a5066134ec6"
@@ -322,7 +322,7 @@
     "sha3",
   ]
   pruneopts = "UT"
-  revision = "c2843e01d9a2bc60bb26ad24e09734fdc2d9ec58"
+  revision = "a1f597ede03a7bef967a422b5b3a5bd08805a01e"
 
 [[projects]]
   branch = "master"
@@ -338,7 +338,7 @@
     "trace",
   ]
   pruneopts = "UT"
-  revision = "d8887717615a059821345a5c23649351b52a1c0b"
+  revision = "5c2c250b6a70e39b74bb544433a348a892b10530"
 
 [[projects]]
   branch = "master"
