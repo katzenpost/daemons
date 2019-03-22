@@ -40,29 +40,36 @@
   # Send rate per minute rating limiting.
   SendRatePerMinute = 100
 
-  # MixLambda is the inverse of the mean of the exponential distribution that
+  # Mu is the inverse of the mean of the exponential distribution that
   # clients will use to sample delays.
-  MixLambda = 0.00025
+  Mu = 0.00025
 
-  # MixMaxDelay is the maximum per-hop delay in milliseconds.
+  # MuMaxDelay is the maximum per-hop delay in milliseconds.
   #
   # If omitted, the MaxDelay will be derived from the 0.99999 quantile of
   # of the exponential distribution.
-  MixMaxDelay = 90000
+  MuMaxDelay = 90000
 
-  # SendLambda is the mean of the poisson distribution that clients will use
+  # LambdaP is the mean of the poisson distribution that clients will use
   # to sample the send scheduling interval (seconds).
-  SendLambda = 15.0
+  LambdaP = 15.0
 
-  # SendMaxInterval is the maximum send interval in milliseconds.
-  SendMaxInterval = 123000
+  # LambaPMaxDelay is the maximum send interval in milliseconds.
+  LambaPMaxDelay = 123000
 
-  # MixLoopLambda is the inverse of the mean of the exponential distribution
-  # that clients will sample to determine send timing of loop decoy messages.
-  MixLoopLambda = 15.0
+  # LambdaL is the mean of the poisson distribution that clients will use
+  # to sample the send scheduling interval (seconds).
+  LambdaL = 15.0
 
-  # MixLoopMaxInterval is the maximum send interval in milliseconds.
-  MixLoopMaxInterval = 123000
+  # LambaLMaxDelay is the maximum send interval in milliseconds.
+  LambaLMaxDelay = 123000
+
+  # LambdaD is the mean of the poisson distribution that clients will use
+  # to sample the send scheduling interval (seconds).
+  LambdaD = 15.0
+
+  # LambaDMaxDelay is the maximum send interval in milliseconds.
+  LambaDMaxDelay = 123000
 
 
 #
