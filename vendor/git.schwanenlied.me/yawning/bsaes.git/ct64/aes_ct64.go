@@ -380,32 +380,30 @@ func SkeyExpand(skey []uint64, numRounds int, compSkey []uint64) {
 }
 
 func RkeyOrtho(qq []uint64, key []byte) {
-	var skey [16]uint32
-	var compSkey [16]uint64
+	var skey [4]uint32
+	var compSkey [2]uint64
 
 	for i := 0; i < 4; i++ {
 		skey[i] = binary.LittleEndian.Uint32(key[i<<2:])
 	}
 
 	var q [8]uint64
-	for i, j := 0, 0; i < 4; i, j = i+4, j+2 {
-		InterleaveIn(&q[0], &q[4], skey[i:])
-		q[1] = q[0]
-		q[2] = q[0]
-		q[3] = q[0]
-		q[5] = q[4]
-		q[6] = q[4]
-		q[7] = q[4]
-		Ortho(q[:])
-		compSkey[j+0] = (q[0] & 0x1111111111111111) |
-			(q[1] & 0x2222222222222222) | (q[2] & 0x4444444444444444) |
-			(q[3] & 0x8888888888888888)
-		compSkey[j+1] = (q[4] & 0x1111111111111111) |
-			(q[5] & 0x2222222222222222) | (q[6] & 0x4444444444444444) |
-			(q[7] & 0x8888888888888888)
-	}
+	InterleaveIn(&q[0], &q[4], skey[:])
+	q[1] = q[0]
+	q[2] = q[0]
+	q[3] = q[0]
+	q[5] = q[4]
+	q[6] = q[4]
+	q[7] = q[4]
+	Ortho(q[:])
+	compSkey[0] = (q[0] & 0x1111111111111111) |
+		(q[1] & 0x2222222222222222) | (q[2] & 0x4444444444444444) |
+		(q[3] & 0x8888888888888888)
+	compSkey[1] = (q[4] & 0x1111111111111111) |
+		(q[5] & 0x2222222222222222) | (q[6] & 0x4444444444444444) |
+		(q[7] & 0x8888888888888888)
 
-	for u, v := 0, 0; u < 4; u, v = u+1, v+4 {
+	for u := 0; u < 2; u++ {
 		x0 := compSkey[u]
 		x1, x2, x3 := x0, x0, x0
 		x0 &= 0x1111111111111111
@@ -415,10 +413,10 @@ func RkeyOrtho(qq []uint64, key []byte) {
 		x1 >>= 1
 		x2 >>= 2
 		x3 >>= 3
-		qq[v+0] = (x0 << 4) - x0
-		qq[v+1] = (x1 << 4) - x1
-		qq[v+2] = (x2 << 4) - x2
-		qq[v+3] = (x3 << 4) - x3
+		qq[u*4+0] = (x0 << 4) - x0
+		qq[u*4+1] = (x1 << 4) - x1
+		qq[u*4+2] = (x2 << 4) - x2
+		qq[u*4+3] = (x3 << 4) - x3
 	}
 
 	for i := range skey {
