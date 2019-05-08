@@ -46,6 +46,29 @@ builds:
     ignore:
       - goos: darwin
         goarch: 386
+  -
+    main: ./authority/voting/main.go
+    binary: voting-authority
+    flags: |
+        -tags netgo -gcflags="-trimpath=$GOPATH" -asmflags="-trimpath=$GOPATH"
+    env:
+      - CGO_ENABLED=0
+    ldflags: |
+      -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -extldflags '-static'
+    goos:
+      - linux
+      - freebsd
+      - netbsd
+      - openbsd
+      - darwin
+    goarch:
+      - amd64
+      - 386
+      - arm64
+      - arm
+    ignore:
+      - goos: darwin
+        goarch: 386
 archive:
   name_template: "{{.ProjectName}}-{{.Version}}-{{.Os}}-{{.Arch}}"
   format: tar.gz
