@@ -58,7 +58,7 @@ func TestServerStartShutdown(t *testing.T) {
 		PKI: &config.PKI{
 			Nonvoting: &config.Nonvoting{
 				Address:   "127.0.0.1:3321",
-				PublicKey: string(authKeyStr),
+				PublicKey: authKeyStr,
 			},
 		},
 		Management: &config.Management{
