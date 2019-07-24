@@ -1,0 +1,13 @@
+image: "golang:1.12"
+
+variables:
+  GO111MODULE: "on"
+
+before_script:
+  - mkdir -p /go/src/github.com
+  - cp -r /builds/katzenpost /go/src/github.com/katzenpost/
+  - cd /go/src/github.com/katzenpost/core
+
+test-core:
+  script:
+    - go test -v -cover -race ./...
